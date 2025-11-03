@@ -2,6 +2,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
+import About from "./components/About"
 import "./main.css"
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <main className="flex-1">
         <Hero />
+        <About />
       </main>
     </div>
   )
