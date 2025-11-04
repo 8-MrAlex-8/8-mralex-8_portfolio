@@ -1,15 +1,4 @@
-type NavItem = {
-    id: string,
-    label: string
-} //creating a NavItem type
-
-const NavItems: NavItem[] = [
-    {id: 'home', label: 'Home'},
-    {id: 'about', label: 'About'},
-    {id: 'projects', label: 'Projects'},
-    {id: 'contact', label: 'Contact'},
-    {id: 'resume', label: 'Resume'},
-]
+import NavItems from '../data/NavItemData.ts';
 
 const Navbar = () => {
    return (
@@ -24,7 +13,10 @@ const Navbar = () => {
             {NavItems.map(item => (
               <button
                 key={item.id}
-                className="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition"
+                className="text-sm font-medium text-neutral-600 hover:text-purple-600 active:text-purple-600 hover:pointer transition"
+              onClick={() => {
+                document.getElementById(item.label)?.scrollIntoView({behavior: 'smooth'})
+              }}
               >
                 {item.label}
               </button>

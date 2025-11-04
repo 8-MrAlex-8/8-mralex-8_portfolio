@@ -2,7 +2,7 @@ import image from "../assets/mypic.png"
 
 const Hero = () => {
     return (
-        <section className = "min-h-screen pt-28 pb-12 md:pt-20 md:pb-0 flex flex-col md:flex-row justify-center items-center px-10 w-full md:px-16 gap-8">
+        <section id = "home" className = "min-h-screen pt-28 pb-12 md:pt-20 md:pb-0 flex flex-col md:flex-row justify-center items-center px-10 w-full md:px-16 gap-8">
             <div className = "w-full md:w-1/2">
                 <p className="mb-3 text-sm font-semibold text-amber-600">Developer, Data Geek, Mathematician.</p>
                 <h1 className="text-4xl font-bold text-neutral-900 dark:text-white md:text-5xl">
