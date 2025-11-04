@@ -9,7 +9,7 @@ const About = () => {
           <h2 className="text-3xl font-bold">About Me</h2>
           <p className="text-md md:text-sm mt-2 italic">Myself, unmasked.</p>
         </div>
-        <div className="w-full md:w-4/6 prose max-w-none text-center md:text-left">
+        <div className="w-full md:w-4/6 prose max-w-none text-justify md:text-left">
           <p className="leading-loose">
             A results-driven software developer with a versatile technical skill set, 
             keen design sensibility, and meticulous attention to detail. 
@@ -27,7 +27,7 @@ const About = () => {
           <h2 className="text-3xl font-bold">Outside of work...</h2>
           <p className="text-md md:text-sm mt-2 italic">A personal touch.</p>
         </div>
-        <div className="w-full md:w-4/6 prose max-w-none space-y-8 text-center md:text-left">
+        <div className="w-full md:w-4/6 prose max-w-none space-y-8 text-justify md:text-left">
           <p className="leading-loose">
             I'm someone who enjoys movement, novelty, and moments that make life feel a 
             little fuller; the type to say yes to the next adventure with the people I 
