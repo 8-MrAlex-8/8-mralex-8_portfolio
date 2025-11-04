@@ -1,11 +1,20 @@
+import {useState} from 'react';
 import NavItems from '../data/NavItemData.ts';
 
 const Navbar = () => {
+
+  const [active, setActive] = useState("home");
+
    return (
     <header className="inset-x-0 fixed shadow-md bg-white">
       <div className="mx-auto max-w-6xl px-6 lg:px-4">
         <div className="flex items-center justify-between py-4">
-          <button className="text-lg font-semibold tracking-tight text-neutral-900">
+          <button 
+            className="text-lg font-semibold tracking-tight text-neutral-900"  
+            onClick={() => {
+                  setActive('home')
+                  document.getElementById('home')?.scrollIntoView({behavior:'smooth'})
+            }}>
             Lanz Malto
           </button>
 
@@ -13,10 +22,16 @@ const Navbar = () => {
             {NavItems.map(item => (
               <button
                 key={item.id}
-                className="text-sm font-medium text-neutral-600 hover:text-purple-600 active:text-purple-600 hover:pointer transition"
-              onClick={() => {
-                document.getElementById(item.label)?.scrollIntoView({behavior: 'smooth'})
-              }}
+                onClick={() => {
+                  setActive(item.id)
+                  document.getElementById(item.id)?.scrollIntoView({behavior:'smooth'})
+                }}
+                className={
+                  `
+                  text-sm font-medium transition
+                  ${active === item.id ? "text-purple-600" : "text-neutral-600"}
+                  ` 
+                }
               >
                 {item.label}
               </button>
