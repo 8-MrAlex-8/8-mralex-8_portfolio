@@ -21,7 +21,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className = "w-full md:w-1/2">
-            <div className="h-100 w-full rounded-2xl bg-gradient-to-tr from-amber-300 via-rose-300 to-sky-300 p-1 dark:from-amber-400 dark:via-rose-400 dark:to-sky-400">
+            <div className="h-100 w-full rounded-2xl bg-linear-to-tr from-amber-300 via-rose-300 to-sky-300 p-1 dark:from-amber-400 dark:via-rose-400 dark:to-sky-400">
               <div className="flex h-full w-full items-center justify-center rounded-2xl bg-white/80">
                 <span className="text-5xl">👋</span>
               </div>

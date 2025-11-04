@@ -41,3 +41,5 @@ const TechSkills: TechSkill[] = [
   { id: 27, name: "notion",       photo: "" },
   { id: 28, name: "trello",       photo: "" },
 ]
+
+export default TechSkills

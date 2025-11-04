@@ -1,5 +1,4 @@
 import htmlLogo from "../assets/html.svg"
-import Demo from "./ui/collapsible.tsx"
 
 const About = () => {
     return (
@@ -27,7 +26,7 @@ const About = () => {
                 <div className = "w-full md:w-3/5">
                     <div className="prose max-w-none space-y-8">
                         <p className = "leading-loose">
-                            <Demo />
+                            Specifically, I have experience with the following technologies (among others):
                         </p>
                     </div>
                 </div>
