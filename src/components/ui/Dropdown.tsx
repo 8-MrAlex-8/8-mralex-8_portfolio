@@ -9,10 +9,11 @@ const Dropdown = () => {
             <div className="collapse-title font-semibold">
                 Core Technologies and Programming Languages
             </div>
-            <div className="collapse-content text-sm flex flex-row justify-center items-center gap-5">
+            {/* Container for skill cards */}
+            <div className="collapse-content text-sm flex flex-row flex-wrap justify-center items-center gap-5">
                 {TechSkills.map((skill:any) => {
                     return(
-                        <SkillCard name={skill.name} logo={skill.photo} colorClass={skill.colorClass}/>
+                        <SkillCard key={skill.id} name={skill.name} logo={skill.photo} colorClass={skill.colorClass} alt={skill.alt}/>
                     )
                 })}
             </div>

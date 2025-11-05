@@ -6,7 +6,7 @@ const Navbar = () => {
   const [active, setActive] = useState("home");
 
    return (
-    <header className="inset-x-0 fixed shadow-md bg-white">
+    <header className="inset-x-0 fixed shadow-md bg-white z-30">
       <div className="mx-auto max-w-6xl px-6 lg:px-4">
         <div className="flex items-center justify-between py-4">
           <button 
