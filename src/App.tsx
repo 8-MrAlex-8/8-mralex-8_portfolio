@@ -6,6 +6,8 @@ import About from "./components/About"
 import Skills from "./components/Skills"
 import "./main.css"
 
+import SkillCard from "./components/ui/SkillCard"
+
 function App() {
   return (
     <div className="min-h-screen flex flex-col">

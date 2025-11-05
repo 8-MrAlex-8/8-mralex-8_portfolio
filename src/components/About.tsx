@@ -1,5 +1,3 @@
-import htmlLogo from "../assets/html.svg"
-
 const About = () => {
   return (
     <section id="about" className="pt-[10dvh]">
