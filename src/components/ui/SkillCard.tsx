@@ -13,7 +13,7 @@ const SkillCard = ({name, logo, colorClass, alt}: SkillCardProps) => {
   return (
     <>
         <div
-            className="w-[24dvw] md:w-[12dvw] lg:w-[8dvw] h-[18dvh] sm:h-[28dvh] md:h-[22dvh] border rounded-md border-gray-300 shadow-lg overflow-hidden relative cursor-pointer select-none"
+            className="h-[120px] w-[100px] border rounded-md border-gray-300 shadow-lg overflow-hidden relative cursor-pointer select-none"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
         >
@@ -28,7 +28,8 @@ const SkillCard = ({name, logo, colorClass, alt}: SkillCardProps) => {
         <img
             src={logo}
             alt={alt}
-            className={`absolute inset-0 py-3 px-1 m-auto transition-opacity duration-350 ${
+            className={`absolute inset-0 py-3 px-1 m-auto 
+                transition-opacity duration-350 ${
             isHovered ? "opacity-0" : "opacity-100"
             }`} 
         />
