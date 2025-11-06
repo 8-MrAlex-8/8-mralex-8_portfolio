@@ -12,9 +12,10 @@ const Dropdown = () => {
             {/* Container for skill cards */}
             <div className="collapse-content text-sm flex flex-row flex-wrap justify-center items-center gap-5">
                 {TechSkills.map((skill:any) => {
+                    if (skill.id < 10 ){  
                     return(
                         <SkillCard key={skill.id} name={skill.name} logo={skill.photo} colorClass={skill.colorClass} alt={skill.alt}/>
-                    )
+                    )}
                 })}
             </div>
         </div>
@@ -23,8 +24,14 @@ const Dropdown = () => {
             <div className="collapse-title font-semibold">
                 Frameworks
             </div>
-            <div className="collapse-content text-sm">
-                Click on "Forgot Password" on the login page and follow the instructions sent to your email.
+            {/* Container for skill cards */}
+            <div className="collapse-content text-sm flex flex-row flex-wrap justify-center items-center gap-5 text-center">
+                {TechSkills.map((skill:any) => {
+                    if (skill.id >= 10 && skill.id <= 17 ){  
+                    return(
+                        <SkillCard key={skill.id} name={skill.name} logo={skill.photo} colorClass={skill.colorClass} alt={skill.alt}/>
+                    )}
+                })}
             </div>
         </div>
         <div className="collapse collapse-arrow bg-base-100 border border-base-300">

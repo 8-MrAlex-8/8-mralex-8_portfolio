@@ -13,3 +13,8 @@
     @apply flex flex-col items-center;
   }
 }
+
+.duration-350 {
+    --tw-duration: 350ms;
+    transition-duration: 350ms;
+}
