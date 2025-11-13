@@ -1,4 +1,3 @@
-import TechSkills from "../data/TechSkillsData"
 import Dropdown from "./ui/Dropdown"
 
 const Skills = () => {
