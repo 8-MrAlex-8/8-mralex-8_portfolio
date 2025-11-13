@@ -7,40 +7,40 @@ type TechSkill = {
 }
 
 // languages
-import html from "../assets/html.svg"
-import css from "../assets/css.svg"
-import csharp from "../assets/csharp.png"
-import js from "../assets/js.svg"
-import kotlin from "../assets/kotlin.svg"
-import php from "../assets/php.svg"
-import python from "../assets/python.svg"
-import mysql from "../assets/mysql.png"
-import c from "../assets/c.png"
+import html from "../assets/skills-stamp/html.svg"
+import css from "../assets/skills-stamp/css.svg"
+import csharp from "../assets/skills-stamp/csharp.png"
+import js from "../assets/skills-stamp/js.svg"
+import kotlin from "../assets/skills-stamp/kotlin.svg"
+import php from "../assets/skills-stamp/php.svg"
+import python from "../assets/skills-stamp/python.svg"
+import mysql from "../assets/skills-stamp/mysql.png"
+import c from "../assets/skills-stamp/c.png"
 
 // frameworks
-import react from "../assets/react.svg"
-import reactNative from "../assets/react-native.svg"
-import dotnet from "../assets/NET.svg"
-import tailwindcss from "../assets/tailwind.png"
-import bootstrap from "../assets/bootstrap.png"
-import jquery from "../assets/jquery.svg"
-import flask from "../assets/flask.svg"
+import react from "../assets/skills-stamp/react.svg"
+import reactNative from "../assets/skills-stamp/react-native.svg"
+import dotnet from "../assets/skills-stamp/NET.svg"
+import tailwindcss from "../assets/skills-stamp/tailwind.png"
+import bootstrap from "../assets/skills-stamp/bootstrap.png"
+import jquery from "../assets/skills-stamp/jquery.svg"
+import flask from "../assets/skills-stamp/flask.svg"
 
 // db and cloud
-import supabase from "../assets/supabase.svg"
-import mongodb from "../assets/mongo.svg"
-import mssql from "../assets/mssql.svg"
-import aws from "../assets/aws.svg"
-import gcp from "../assets/gcp.svg"
+import supabase from "../assets/skills-stamp/supabase.svg"
+import mongodb from "../assets/skills-stamp/mongo.svg"
+import mssql from "../assets/skills-stamp/mssql.svg"
+import aws from "../assets/skills-stamp/aws.svg"
+import gcp from "../assets/skills-stamp/gcp.svg"
 
 
 // dev tools
-import github from "../assets/github.svg"
-import postman from "../assets/postman.svg"
-import vscode from "../assets/vscode.svg"
-import figma from "../assets/figma.svg"
-import notion from "../assets/notion.svg"
-import trello from "../assets/trello.svg"
+import github from "../assets/skills-stamp/github.svg"
+import postman from "../assets/skills-stamp/postman.svg"
+import vscode from "../assets/skills-stamp/vscode.svg"
+import figma from "../assets/skills-stamp/figma.svg"
+import notion from "../assets/skills-stamp/notion.svg"
+import trello from "../assets/skills-stamp/trello.svg"
 
 
 const TechSkills: TechSkill[] = [
