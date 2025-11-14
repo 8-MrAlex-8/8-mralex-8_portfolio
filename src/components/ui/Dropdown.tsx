@@ -5,7 +5,7 @@ const Dropdown = () => {
     return(
         <>
         <div className="collapse collapse-arrow bg-base-100 border border-base-300">
-            <input type="checkbox" name="my-accordion-2" defaultChecked />
+        <input type="checkbox" name="my-accordion-1" />
             <div className="collapse-title font-semibold">
                 Core Technologies and Programming Languages
             </div>
