@@ -4,8 +4,10 @@ import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import About from "./components/About"
 import Skills from "./components/Skills"
-import Internship from "./components/Internship"
+import Experience from "./components/Experience"
 import Projects from "./components/Projects"
+import Contact from "./components/Contact"
+import Resume from "./components/Resume"
 import "./main.css"
 
 
@@ -17,8 +19,10 @@ function App() {
         <Hero />
         <About />
         <Skills />
-        <Internship />
+        <Experience />
         <Projects />
+        <Contact />
+        <Resume />
       </main>
     </div>
   )
