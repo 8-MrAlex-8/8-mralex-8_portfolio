@@ -3,7 +3,6 @@ import { useState } from "react"
 const ContactForm = () => {
     const [isLoading, setLoading] = useState(false);
     const [formData, setFormData] = useState({
-        name: "",
         email: "",
         subject: "",
         message: ""
@@ -31,22 +30,6 @@ const ContactForm = () => {
     return (
         <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-4">
-                <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-neutral-700 mb-2">
-                        Name
-                    </label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                        className="w-full px-4 py-2 text-sm border border-neutral-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all outline-none"
-                        placeholder="Your name"
-                    />
-                </div>
-
                 <div>
                     <label htmlFor="email" className="block text-sm font-medium text-neutral-700 mb-2">
                         Email
@@ -89,7 +72,7 @@ const ContactForm = () => {
                         value={formData.message}
                         onChange={handleChange}
                         required
-                        rows={6}
+                        rows={4}
                         className="w-full px-4 py-2 text-sm border border-neutral-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all outline-none resize-none"
                         placeholder="Tell me about your project, opportunity, or just say hello..."
                     />
