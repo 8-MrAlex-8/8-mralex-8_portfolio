@@ -9,8 +9,8 @@ const Experience = () => {
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                         My Experience
                     </h2>
-                    <p className="text-md md:text-lg text-gray-400 italic">
-                        Professional journey and achievements
+                    <p className="text-md text-gray-400 italic">
+                        A glimpse into my professional journey and achievements.
                     </p>
                     <div className="w-24 h-1 bg-linear-to-r from-transparent via-blue-500 to-transparent mx-auto mt-6"></div>
                 </div>
@@ -57,8 +57,13 @@ const Experience = () => {
                                         </div>
                                     </div>
                                     <p className="text-gray-300 leading-relaxed mb-4">
-                                        [Description of your internship experience. Write about your responsibilities, 
-                                        projects you worked on, technologies you used, and key achievements.]
+                                        At Indra, I contributed to internal development by building full-stack internal apps using HTML/CSS/JavaScript/PHP, Bootstrap, 
+                                        jQuery, and Vue.js. Here, I also built automated ETL pipelines in streamline data processing, and created a simple Linear Regression model 
+                                        using Python. For the model, I migrated the logic into PHP for integration into a separate system.
+                                        <br /><br />
+                                        Additionally, I redesigned a legacy interface in Figma and supported workflow automation using MS Power Automate. 
+                                        Throughout the internship, I worked within an Agile/Scrum environment, adapted to the team’s MVC architecture, 
+                                        and delivered meaningful improvements to multiple internal projects.
                                     </p>
                                     <div className="flex flex-wrap gap-2">
                                             {ExperienceData
@@ -109,10 +114,10 @@ const Experience = () => {
                                         </div>
                                         <div className="flex flex-col gap-2 shrink-0">
                                             <span className="inline-block px-4 py-2 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium border border-purple-500/30">
-                                                [Date]
+                                                September 2025
                                             </span>
                                             <span className="inline-block px-4 py-2 bg-yellow-500/20 text-yellow-300 rounded-full text-sm font-medium border border-yellow-500/30 text-center">
-                                                [Rank/Award]
+                                                Top 5 Awardee
                                             </span>
                                         </div>
                                     </div>
@@ -120,25 +125,6 @@ const Experience = () => {
                                         [Description of the contest. Write about the competition format, 
                                         your project/solution, challenges faced, and what you learned.]
                                     </p>
-                                    <div className="flex flex-wrap gap-2 mb-4">
-                                        <span className="px-3 py-1 bg-slate-700/50 text-gray-300 rounded-md text-sm border border-gray-600/50">
-                                            [Technology 1]
-                                        </span>
-                                        <span className="px-3 py-1 bg-slate-700/50 text-gray-300 rounded-md text-sm border border-gray-600/50">
-                                            [Technology 2]
-                                        </span>
-                                        <span className="px-3 py-1 bg-slate-700/50 text-gray-300 rounded-md text-sm border border-gray-600/50">
-                                            [Technology 3]
-                                        </span>
-                                    </div>
-                                    {false && (
-                                        <a href="#" className="text-purple-400 hover:text-purple-300 text-sm font-medium inline-flex items-center gap-1">
-                                            View Project
-                                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                            </svg>
-                                        </a>
-                                    )}
                                 </div>
                             </div>
 

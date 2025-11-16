@@ -2,85 +2,86 @@ import TechSkills from "../../data/TechSkillsData"
 import SkillCard from "./SkillCard"
 
 const Dropdown = () => {
-    return(
-        <>
-        <div className="collapse collapse-arrow bg-base-100 border border-base-300">
-        <input type="checkbox" name="my-accordion-1" />
-            <div className="collapse-title font-semibold">
-                Core Technologies and Programming Languages
+    return (
+      <>
+        <div className="space-y-2">
+          
+          {/* Technologies */}
+          <div className="collapse collapse-arrow border border-base-200 bg-transparent rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-2xl">
+            <input type="checkbox" />
+            <div className="collapse-title font-semibold">Core Technologies & Languages</div>
+  
+            <div className="collapse-content">
+              <div className="flex flex-wrap justify-center items-center gap-6">
+                {TechSkills.filter(skill => skill.id < 10).map(skill => (
+                  <SkillCard key={skill.id} name={skill.name} logo={skill.photo} colorClass={skill.colorClass} alt={skill.alt}/>
+                ))}
+              </div>
             </div>
-            {/* Container for skill cards */}
-            <div className="collapse-content text-sm flex flex-row flex-wrap justify-center items-center gap-5">
-                {TechSkills.map((skill:any) => {
-                    if (skill.id < 10 ){  
-                    return(
-                        <SkillCard key={skill.id} name={skill.name} logo={skill.photo} colorClass={skill.colorClass} alt={skill.alt}/>
-                    )}
-                })}
+          </div>
+  
+          {/* Frameworks */}
+          <div className="collapse collapse-arrow  border border-base-200 bg-transparent rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-2xl">
+            <input type="checkbox" />
+            <div className="collapse-title font-semibold">Frameworks</div>
+  
+            <div className="collapse-content">
+              <div className="flex flex-wrap justify-center items-center gap-6">
+                {TechSkills.filter(skill => skill.id >= 10 && skill.id <= 17).map(skill => (
+                  <SkillCard key={skill.id} name={skill.name} logo={skill.photo} colorClass={skill.colorClass} alt={skill.alt}/>
+                ))}
+              </div>
             </div>
+          </div>
+  
+          {/* Databases */}
+          <div className="collapse collapse-arrow  border border-base-200 bg-transparent rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-2xl">
+            <input type="checkbox" />
+            <div className="collapse-title font-semibold">Databases & Cloud</div>
+  
+            <div className="collapse-content">
+              <div className="flex flex-wrap justify-center items-center gap-6">
+                {TechSkills.filter(skill => skill.id >= 18 && skill.id <= 22).map(skill => (
+                  <SkillCard key={skill.id} name={skill.name} logo={skill.photo} colorClass={skill.colorClass} alt={skill.alt}/>
+                ))}
+              </div>
+            </div>
+          </div>
+  
+          {/* Developer Tools */}
+          <div className="collapse collapse-arrow  border border-base-200 bg-transparent rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-2xl">
+            <input type="checkbox" />
+            <div className="collapse-title font-semibold">Developer Tools</div>
+  
+            <div className="collapse-content">
+              <div className="flex flex-wrap justify-center items-center gap-6">
+                {TechSkills.filter(skill => skill.id >= 23 && skill.id <= 28).map(skill => (
+                  <SkillCard key={skill.id} name={skill.name} logo={skill.photo} colorClass={skill.colorClass} alt={skill.alt}/>
+                ))}
+              </div>
+            </div>
+          </div>
+  
+          {/* Soft Skills */}
+          <div className="collapse collapse-arrow  border border-base-200 bg-transparent rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-2xl">
+            <input type="checkbox"/>
+            <div className="collapse-title font-semibold">Soft Skills</div>
+  
+            <div className="collapse-content">
+              <ul className="list-disc list-inside space-y-2 ml-3 marker:text-accent">
+                <li>Leadership & Cross-functional Collaboration</li>
+                <li>Adaptability</li>
+                <li>Initiative</li>
+                <li>Communication</li>
+                <li>Presentation & Pitching</li>
+              </ul>
+            </div>
+          </div>
+  
         </div>
-        <div className="collapse collapse-arrow bg-base-100 border border-base-300">
-            <input type="checkbox" name="my-accordion-2" />
-            <div className="collapse-title font-semibold">
-                Frameworks
-            </div>
-            {/* Container for skill cards */}
-            <div className="collapse-content text-sm flex flex-row flex-wrap justify-center items-center gap-5 text-center">
-                {TechSkills.map((skill:any) => {
-                    if (skill.id >= 10 && skill.id <= 17 ){  
-                    return(
-                        <SkillCard key={skill.id} name={skill.name} logo={skill.photo} colorClass={skill.colorClass} alt={skill.alt}/>
-                    )}
-                })}
-            </div>
-        </div>
-        <div className="collapse collapse-arrow bg-base-100 border border-base-300">
-            <input type="checkbox" name="my-accordion-2" />
-            <div className="collapse-title font-semibold">
-                Databases and Cloud
-            </div>
-            {/* Container for skill cards */}
-            <div className="collapse-content text-sm flex flex-row flex-wrap justify-center items-center gap-5 text-center">
-                {TechSkills.map((skill:any) => {
-                    if (skill.id >= 18 && skill.id <= 22 ){  
-                    return(
-                        <SkillCard key={skill.id} name={skill.name} logo={skill.photo} colorClass={skill.colorClass} alt={skill.alt}/>
-                    )}
-                })}
-            </div>
-        </div>
-         <div className="collapse collapse-arrow bg-base-100 border border-base-300">
-            <input type="checkbox" name="my-accordion-2" />
-            <div className="collapse-title font-semibold">
-                Developer Tools
-            </div>
-           {/* Container for skill cards */}
-            <div className="collapse-content text-sm flex flex-row flex-wrap justify-center items-center gap-5 text-center">
-                {TechSkills.map((skill:any) => {
-                    if (skill.id >= 23 && skill.id <= 28 ){  
-                    return(
-                        <SkillCard key={skill.id} name={skill.name} logo={skill.photo} colorClass={skill.colorClass} alt={skill.alt}/>
-                    )}
-                })}
-            </div>
-        </div>
-         <div className="collapse collapse-arrow bg-base-100 border border-base-300">
-            <input type="checkbox" name="my-accordion-2" />
-            <div className="collapse-title font-semibold">
-                Soft Skills
-            </div>
-            <div className="collapse-content text-sm">
-                <ul list-style-type="dash" className = "ml-8 space-y-5">
-                    <li> Leadership & Cross-functional Collaboration </li>
-                    <li> Adaptability </li>
-                    <li> Initiative </li>
-                    <li> Communication </li>
-                    <li> Presentation & Pitching</li>
-                </ul>
-            </div>
-        </div>
-    </>
+      </>
     )
-}
+  }
+  
 
 export default Dropdown;

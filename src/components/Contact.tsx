@@ -46,14 +46,14 @@ const Contact = () => {
                           }
                       `}>
                         <img src = {social.image} width="36" height="36" className="transition duration-200 group-hover:brightness-0 group-hover:invert"/>
-                        <p className={`
+                        <a className={`
                           transition-all duration-300
                         group-hover:text-white
                         ${hoveredId === social.id 
                           ? "translate-x-1 opacity-100" 
                           : "translate-x-0 opacity-100"
                         }
-                      `}>{hoveredId === social.id ? social.link : social.label}</p>
+                      `} href = {social.link} target="_blank">{hoveredId === social.id ? social.link : social.label}</a>
                       </div>
                     )
                   })

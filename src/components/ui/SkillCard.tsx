@@ -12,14 +12,14 @@ const SkillCard = ({name, logo, colorClass, alt}: SkillCardProps) => {
 
   return (
     <>
-        <div
-            className="h-[100px] w-[80px] border rounded-md border-gray-300 shadow-lg overflow-hidden relative cursor-pointer select-none"
+       <div
+            className="h-[110px] w-[90px] rounded-md border border-gray-300 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.05] relative cursor-pointer select-none"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
         >
         {/* wipe layer */}
         <div
-            className={`absolute bottom-0 left-0 w-full ${colorClass} transition-[height] duration-350 ease-out ${
+            className={`absolute rounded-md bottom-0 left-0 w-full ${colorClass} transition-[height] duration-350 ease-out ${
             isHovered ? "h-full" : "h-0"
             }`}
         />
@@ -36,7 +36,7 @@ const SkillCard = ({name, logo, colorClass, alt}: SkillCardProps) => {
 
         {/* label */}
         <p
-            className={`font-sans absolute inset-0 flex items-center justify-center text-md font-extralight text-white transition-opacity duration-300 ${
+            className={`font-sans absolute text-center inset-0 flex items-center justify-center text-md font-extralight text-white transition-opacity duration-300 ${
             isHovered ? "opacity-100" : "opacity-0"
             }`}
         >
