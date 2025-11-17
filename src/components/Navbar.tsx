@@ -1,37 +1,39 @@
-import {useState} from 'react';
-import NavItems from '../data/NavItemData.ts';
+import { useState } from "react";
+import NavItems from "../data/NavItemData.ts";
 
 const Navbar = () => {
-
   const [active, setActive] = useState("home");
 
-   return (
+  return (
     <header className="inset-x-0 fixed shadow-md bg-white z-30">
       <div className="mx-auto max-w-6xl px-6 lg:px-4">
         <div className="flex items-center justify-between py-4">
-          <button 
-            className="text-lg font-semibold tracking-tight text-neutral-900"  
+          <button
+            className="text-lg font-semibold tracking-tight text-neutral-900"
             onClick={() => {
-                  setActive('home')
-                  document.getElementById('home')?.scrollIntoView({behavior:'smooth'})
-            }}>
+              setActive("home");
+              document
+                .getElementById("home")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             Lanz Malto
           </button>
 
           <nav className="hidden gap-6 md:flex">
-            {NavItems.map(item => (
+            {NavItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => {
-                  setActive(item.id)
-                  document.getElementById(item.id)?.scrollIntoView({behavior:'smooth'})
+                  setActive(item.id);
+                  document
+                    .getElementById(item.id)
+                    ?.scrollIntoView({ behavior: "smooth" });
                 }}
-                className={
-                  `
+                className={`
                   text-sm font-medium transition
                   ${active === item.id ? "text-purple-600" : "text-neutral-600"}
-                  ` 
-                }
+                  `}
               >
                 {item.label}
               </button>
@@ -43,7 +45,12 @@ const Navbar = () => {
               aria-label="Toggle theme"
               className="rounded-md border border-neutral-200 p-2 hover:bg-neutral-100 transition"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 text-neutral-700">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="h-5 w-5 text-neutral-700"
+              >
                 <path d="M21.64 13.64A9 9 0 1 1 10.36 2.36 7 7 0 1 0 21.64 13.64z" />
               </svg>
             </button>
@@ -52,15 +59,26 @@ const Navbar = () => {
               className="md:hidden rounded-md p-2 hover:bg-neutral-100 dark:hover:bg-neutral-800"
               aria-label="Toggle menu"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-6 w-6 text-neutral-800">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="h-6 w-6 text-neutral-800"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
               </svg>
             </button>
           </div>
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
 export default Navbar;
