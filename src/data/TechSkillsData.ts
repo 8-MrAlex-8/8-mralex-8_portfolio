@@ -29,7 +29,7 @@ import flask from "../assets/skills-stamp/flask.svg"
 // db and cloud
 import supabase from "../assets/skills-stamp/supabase.svg"
 import mongodb from "../assets/skills-stamp/mongo.svg"
-import mssql from "../assets/skills-stamp/mssql.svg"
+import mssql from "../assets/skills-stamp/mssqls.svg"
 import aws from "../assets/skills-stamp/aws.svg"
 import gcp from "../assets/skills-stamp/gcp.svg"
 
@@ -75,7 +75,8 @@ const TechSkills: TechSkill[] = [
   { id: 24, name: "Postman",   photo: postman,  colorClass: "bg-gradient-to-br from-orange-400 to-orange-600", alt: "Postman API testing logo" },
   { id: 25, name: "VS Code",   photo: vscode,   colorClass: "bg-gradient-to-br from-sky-500 to-blue-700", alt: "Visual Studio Code logo" },
   { id: 26, name: "Figma",     photo: figma,    colorClass: "bg-gradient-to-br from-rose-500 to-purple-600", alt: "Figma logo" },
-  { id: 27, name: "Notion",    photo: notion,   colorClass: "bg-gradient-to-br from-neutral-700 to-neutral-900", alt: "Notion workspace logo" },
+  // { id: 27, name: "Notion",    photo: notion,   colorClass: "bg-gradient-to-br from-neutral-700 to-neutral-900", alt: "Notion workspace logo" },
+  { id: 28, name: "Trello",    photo: trello,   colorClass: "bg-gradient-to-br from-cyan-600 to-blue-700", alt: "Trello kanban board logo" },
 ];
 
 

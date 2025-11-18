@@ -1,4 +1,4 @@
-import Dropdown from "./ui/Dropdown";
+import SkillsGroup from "./ui/SkillsGroup";
 
 const Skills = () => {
   return (
@@ -13,7 +13,7 @@ const Skills = () => {
           Your resident all-rounder's kit.
         </p>
       </div>
-      <Dropdown />
+      <SkillsGroup />
     </div>
   );
 };
