@@ -165,7 +165,7 @@ const About = () => {
         </section>
 
         <button
-          className={`btn btn-neutral bg-transparent border self-end ${
+          className={`btn btn-neutral hover:bg-amber-500 hover:text-zinc-100 bg-transparent border hover:duration-400 self-end ${
             leftExpanded ? "border-zinc-700" : "border-zinc-400"
           } mt-6`}
           disabled={
@@ -353,7 +353,7 @@ const About = () => {
         </section>
 
         <button
-          className={`btn btn-neutral bg-transparent border self-end ${
+          className={`btn btn-neutral border bg-transparent hover:bg-violet-600 hover:text-zinc-100 hover:duration-400 self-end ${
             rightExpanded ? "border-zinc-700" : "border-zinc-400"
           } mt-6`}
           disabled={
