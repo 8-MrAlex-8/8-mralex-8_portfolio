@@ -18,3 +18,7 @@
     --tw-duration: 350ms;
     transition-duration: 350ms;
 }
+
+.font-2xt {
+  font-weight: 50;
+}

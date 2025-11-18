@@ -37,7 +37,7 @@ const Contact = () => {
                     onMouseLeave={() => setHoveredId(null)}
                     className={`
                       group flex flex-row items-center gap-4 p-3 rounded-xl border border-slate-700/50
-                      transition-all duration-300 hover:-translate-y-[2px]
+                      transition-all duration-300 hover:-translate-y-0.5
                       hover:shadow-xl
                       hover:shadow-purple-500/10
                       backdrop-blur-sm
@@ -53,7 +53,7 @@ const Contact = () => {
                     {/* Icon Container */}
                     <div
                       className="
-                        w-12 h-12 flex items-center justify-center rounded-full
+                        w-10 h-10 flex items-center justify-center rounded-full
                         bg-linear-to-br from-slate-700 to-slate-800
                         border border-slate-600/50 shadow-md
                         group-hover:scale-110 transition-all duration-300

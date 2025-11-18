@@ -13,14 +13,14 @@ const SkillCard = ({ name, logo, colorClass, alt }: SkillCardProps) => {
   return (
     <>
       <div
-        className={`h-[86px] w-[72px] rounded-md border border-${colorClass} shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.05] relative cursor-pointer select-none`}
+        className={`h-[84px] w-[76px] rounded-md shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.05] relative cursor-pointer select-none`}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >
         {/* wipe layer */}
         <div
-          className={`absolute rounded-md bottom-0 left-0 w-full ${colorClass} transition-[height] duration-350 ease-out ${
-            isHovered ? "h-full" : "h-0"
+          className={`absolute rounded-md bottom-0 left-0 p-[0.5px] h-full ${colorClass} transition-[width] duration-500 ease-out ${
+            isHovered ? "w-full" : "w-0"
           }`}
         />
 
@@ -28,7 +28,7 @@ const SkillCard = ({ name, logo, colorClass, alt }: SkillCardProps) => {
         <img
           src={logo}
           alt={alt}
-          className={`absolute inset-0 py-3 px-1 m-auto 
+          className={`absolute inset-0 p-2 m-auto 
                 transition-opacity duration-350 ${
                   isHovered ? "opacity-0" : "opacity-100"
                 }`}
@@ -36,7 +36,7 @@ const SkillCard = ({ name, logo, colorClass, alt }: SkillCardProps) => {
 
         {/* label */}
         <p
-          className={`font-sans absolute text-center inset-0 flex items-center justify-center text-md font-extralight text-white transition-opacity duration-300 ${
+          className={`font-sans absolute text-center inset-0 flex items-center justify-center text-sm font-extralight text-white transition-opacity duration-300 ${
             isHovered ? "opacity-100" : "opacity-0"
           }`}
         >
