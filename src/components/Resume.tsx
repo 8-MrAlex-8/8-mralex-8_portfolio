@@ -1,4 +1,4 @@
-import ResumeThumbnail from "../assets/thumbnail.png";
+// import ResumeThumbnail from "../assets/thumbnail.png";
 
 const Resume = () => {
   return (

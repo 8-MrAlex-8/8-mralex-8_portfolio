@@ -5,9 +5,6 @@ type FancyButtonProps = {
 };
 
 const FancyButton = ({ title }: FancyButtonProps) => {
-  const [isShort, isShortPressed] = useState(false);
-  const [isFull, isFullPressed] = useState(true);
-
   return (
     <StyledWrapper>
       <button className="button">{title}</button>

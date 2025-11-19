@@ -39,7 +39,7 @@ import github from "../assets/skills-stamp/github.svg"
 import postman from "../assets/skills-stamp/postman.svg"
 import vscode from "../assets/skills-stamp/vscode.svg"
 import figma from "../assets/skills-stamp/figma.svg"
-import notion from "../assets/skills-stamp/notion.svg"
+// import notion from "../assets/skills-stamp/notion.svg"
 import trello from "../assets/skills-stamp/trello.svg"
 
 
