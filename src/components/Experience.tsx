@@ -72,30 +72,31 @@ const Experience = () => {
             A glimpse into my professional journey and achievements.
           </p>
           <div className="w-24 h-1 bg-linear-to-r from-transparent via-blue-500 to-transparent mx-auto mt-6"></div>
-          <div className="mx-auto mt-6 rounded-full flex flex-row justify-center items-center gap-4">
-            <StyledWrapper>
-              <button
-                className={`button ${isCompact ? "selected" : ""}`}
-                onClick={() => {
-                  setCompact(true);
-                  setFull(false);
-                }}
-              >
-                Compact
-              </button>
-            </StyledWrapper>
-            <StyledWrapper>
-              <button
-                className={`button ${isFull ? "selected" : ""}`}
-                onClick={() => {
-                  setFull(true);
-                  setCompact(false);
-                }}
-              >
-                Full
-              </button>
-            </StyledWrapper>
-          </div>
+        </div>
+
+        <div className="mt-6 mb-12 flex flex-row justify-center items-center gap-4 sticky top-20 z-30 bg-transparent">
+          <StyledWrapper>
+            <button
+              className={`button ${isCompact ? "selected" : ""}`}
+              onClick={() => {
+                setCompact(true);
+                setFull(false);
+              }}
+            >
+              Compact
+            </button>
+          </StyledWrapper>
+          <StyledWrapper>
+            <button
+              className={`button ${isFull ? "selected" : ""}`}
+              onClick={() => {
+                setFull(true);
+                setCompact(false);
+              }}
+            >
+              Full
+            </button>
+          </StyledWrapper>
         </div>
 
         {/* Timeline Container */}
@@ -119,7 +120,7 @@ const Experience = () => {
                 </svg>
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-white">
-                Professional Experience
+                Professional Experience & Training
               </h3>
             </div>
 

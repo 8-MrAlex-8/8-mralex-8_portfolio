@@ -3,7 +3,7 @@ export type ExperienceItem = {
     company: string;
     position: string;
     date: string;
-    compactDescription: string;
+    compactDescription: string[];
     fullDescription: string;
     tech: string[];
 };
@@ -29,8 +29,18 @@ export const ExperienceData: ExperienceItem[] = [
         company: "Indra Philippines, Inc.",
         position: "Intern, Innovation Management Team",
         date: "June 2025 - July 2025",
-        compactDescription: "Resolved 30% of the team's total backlog tasks across development, automation, and UI/UX workstreams over a 280-hour internship by contributing to internal tool enhancements and maintenance requests: \n→ Developed full-stack web applications for internal tools using core web technologies (HTML5, CSS3, JavaScript, PHP), Bootstrap, and jQuery to improve design and functionality.\n→ Analyzed internal datasets and built automated data pipelines using Python to streamline data processing.\n→ Supported the development of an automated attachment-extraction tool with MS Power Automate, eliminating 100% of related manual work.\n→ Redesigned a legacy application with Figma, applying industry-standard UI/UX principles.",
+        compactDescription: ["Resolved 30% of the team's total backlog tasks across development, automation, and UI/UX workstreams over a 280-hour internship by contributing to internal tool enhancements and maintenance requests: \n→ Developed full-stack web applications for internal tools using core web technologies (HTML5, CSS3, JavaScript, PHP), Bootstrap, and jQuery to improve design and functionality.\n→ Analyzed internal datasets and built automated data pipelines using Python to streamline data processing.\n→ Supported the development of an automated attachment-extraction tool with MS Power Automate, eliminating 100% of related manual work.\n→ Redesigned a legacy application with Figma, applying industry-standard UI/UX principles."],
         fullDescription: "At Indra, I contributed to internal development under the Innovation Management Team, rendering 280 hours and helping the team resolve 30% of their outstanding tasks.\n\nI did this by building full-stack internal apps using HTML/CSS/JavaScript/PHP, Bootstrap, jQuery, and some Vue.js. Here, I also built automated ETL pipelines in streamline data processing, and created a simple Linear Regression model using Python. For the model, I migrated the logic into PHP for integration into a separate system.\n\nAdditionally, I redesigned a legacy interface in Figma and supported workflow automation using MS Power Automate. Throughout the internship, I worked within an Agile/Scrum environment, adapted to the team's MVC architecture, and delivered meaningful improvements to multiple internal projects.\n\nThe main challenge I faced was interacting closely with the people I was working with, and the steps I took to resolve this challenge certainly helped me socialize professionally with my teammates and expand my network. I am also happy to say that I was taken in by a team with plenty of similarities as I, which made things a whole lot easier and the work more enjoyable.",
+        tech: ["HTML/CSS/JavaScript", "PHP", "Bootstrap", "Vue.js", "jQuery", "MySQL", "Python", "Figma", "MS Power Automate"],
+    },
+
+    {
+        id: 2,
+        company: "WPH Digital Pte. Ltd. Academy",
+        position: "Summer Bootcamp Batch 1 Participant",
+        date: "June 2024 - July 2024",
+        compactDescription: ["Completed an intensive full-stack engineering program focused on C#, ASP.NET Core, HTML/CSS/JS, Tailwind, jQuery, and SQLite, including security (IIS) and cloud fundamentals (AWS).","Built a C# console application & full-stack ASP.NET MVC web application as capstone projects for the bootcamp.","Recognitions: Top 5 Overall, Elite 8 Awardee (all weeks)."],
+        fullDescription: "I completed an intensive full-stack engineering program focused on C#, ASP.NET Core, HTML, CSS, JavaScript, Tailwind, jQuery, and SQLite, with additional training in security concepts using IIS and foundational cloud practices under AWS. The bootcamp combined fast-paced lessons, daily Kahoot quizzes, and hands-on coding activities that reinforced each topic through repetition and practical application.\n\nAcross the program, I finished 23 individual assignments and 3 collaborative projects, allowing me to build both technical depth and teamwork experience. As part of the capstone requirements, I developed two major projects: a C# console game, which strengthened my understanding of object-oriented programming and clean code structure, and a full-stack ASP.NET MVC to-do application, where I implemented database integration, routing, CRUD functionality, and a user-friendly interface.\n\nThroughout the bootcamp, I consistently performed at the top of the cohort, earning the Elite 8 Award every week and ultimately ranking as one of the Top 5 participants overall for performance, consistency, and engagement.",
         tech: ["HTML/CSS/JavaScript", "PHP", "Bootstrap", "Vue.js", "jQuery", "MySQL", "Python", "Figma", "MS Power Automate"],
     },
 ];
@@ -43,12 +53,12 @@ export const ContestData: ContestItem[] = [
         date: "September 2025",
         badges: ["Top 5"],
         compactDescription: "Led product ideation and system-design efforts for Axolert — an AI public-health monitoring concept — and delivered the technical pitch, earning Top 5 out of 30 teams in the regional competition.",
-        fullDescription: "As Product & Pitch Lead in AI.DEAS for Impact 2025, I aided brainstorming sessions and faced against 30+ teams to earn a spot in the regional pitching competition by shaping Axolert, a public-health AI solution that digitizes and centralizes medical reports, detects anomalies, forecasts resource shortages, and delivers real-time alerts.\n\nChallenges we faced included aligning technical possibilities with real-world needs under tight deadlines, which we resolved via intensive consultation and interviews with industry professionals invited to the event.\n\nThrough the team's efforts, we managed to secure the Top 5 spot overall in this event.",
+        fullDescription: "As Product & Pitch Lead in AI.DEAS for Impact 2025, I aided brainstorming sessions and faced against 30+ teams to earn a spot in the regional pitching competition by shaping Axolert, a public-health AI solution that digitizes and centralizes medical reports, detects anomalies, forecasts resource shortages, and delivers real-time alerts.\n\nIn this 2-day hackathon, we had some introductory exposure to Google Cloud and had plenty of talks with industry professionals regarding the tech landscape of today. Some challenges we faced included aligning technical possibilities with real-world needs under tight deadlines, which we resolved via detailed interviews and effective consultation with industry professionals invited to the event.\n\nThrough the team's efforts, we managed to secure the Top 5 spot overall in this event.",
         readLink: {
             text: "SU team places 5th in reg'l AI hackathon with public health solution 'Axolert'",
             url: "https://su.edu.ph/su-team-places-5th-in-regl-ai-hackathon-with-public-health-solution-axolert/",
         },
-        skills: ["Pitching and Presentation Ability", "Strategic Leadership", "Team Coordination", "Stakeholder Engagement"],
+        skills: ["Google Cloud", "Pitching and Presentation Ability", "Strategic Leadership", "Team Coordination", "Stakeholder Engagement"],
     },
     {
         id: 2,

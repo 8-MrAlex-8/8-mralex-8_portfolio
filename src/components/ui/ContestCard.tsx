@@ -64,7 +64,7 @@ const ContestCard = ({ contest, isCompact }: ContestCardProps) => {
           {contest.skills.map((skill) => (
             <span
               key={skill}
-              className="inline-block px-3 py-1 bg-slate-700/50 text-gray-300 rounded-md text-sm border border-gray-600/50"
+              className="inline-block px-3 py-1 bg-linear-to-r from-purple-600/40  to-purple-600/60 text-gray-300 rounded-md text-sm border border-gray-600/50"
             >
               {skill}
             </span>

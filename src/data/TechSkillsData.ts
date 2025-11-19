@@ -32,7 +32,7 @@ import mongodb from "../assets/skills-stamp/mongo.svg"
 import mssql from "../assets/skills-stamp/mssqls.svg"
 import aws from "../assets/skills-stamp/aws.svg"
 import gcp from "../assets/skills-stamp/gcp.svg"
-
+import excel from "../assets/skills-stamp/excel.svg"
 
 // dev tools
 import github from "../assets/skills-stamp/github.svg"
@@ -41,6 +41,8 @@ import vscode from "../assets/skills-stamp/vscode.svg"
 import figma from "../assets/skills-stamp/figma.svg"
 // import notion from "../assets/skills-stamp/notion.svg"
 import trello from "../assets/skills-stamp/trello.svg"
+import tableau from "../assets/skills-stamp/tableau.svg"
+import powerautomate from "../assets/skills-stamp/power-automate.png"
 
 
 const TechSkills: TechSkill[] = [
@@ -69,14 +71,37 @@ const TechSkills: TechSkill[] = [
   { id: 20, name: "MSSQL Server", photo: mssql,        colorClass: "bg-gradient-to-br from-rose-600 to-rose-800", alt: "Microsoft SQL Server logo" },
   { id: 21, name: "AWS",          photo: aws,          colorClass: "bg-gradient-to-br from-amber-400 to-orange-600", alt: "Amazon Web Services logo" },
   { id: 22, name: "Google Cloud", photo: gcp,          colorClass: "bg-gradient-to-br from-sky-400 to-blue-600", alt: "Google Cloud Platform logo" },
+  { 
+  id: 23, 
+  name: "Excel", 
+  photo: excel, 
+  colorClass: "bg-gradient-to-br from-green-500 to-green-700", 
+  alt: "Microsoft Excel logo" 
+},
+
 
   // Developer Tools
-  { id: 23, name: "GitHub",    photo: github,   colorClass: "bg-gradient-to-br from-neutral-800 to-neutral-900", alt: "GitHub logo" },
-  { id: 24, name: "Postman",   photo: postman,  colorClass: "bg-gradient-to-br from-orange-400 to-orange-600", alt: "Postman API testing logo" },
-  { id: 25, name: "VS Code",   photo: vscode,   colorClass: "bg-gradient-to-br from-sky-500 to-blue-700", alt: "Visual Studio Code logo" },
-  { id: 26, name: "Figma",     photo: figma,    colorClass: "bg-gradient-to-br from-rose-500 to-purple-600", alt: "Figma logo" },
-  // { id: 27, name: "Notion",    photo: notion,   colorClass: "bg-gradient-to-br from-neutral-700 to-neutral-900", alt: "Notion workspace logo" },
-  { id: 28, name: "Trello",    photo: trello,   colorClass: "bg-gradient-to-br from-cyan-600 to-blue-700", alt: "Trello kanban board logo" },
+  { id: 24, name: "GitHub",    photo: github,   colorClass: "bg-gradient-to-br from-neutral-800 to-neutral-900", alt: "GitHub logo" },
+  { id: 25, name: "Postman",   photo: postman,  colorClass: "bg-gradient-to-br from-orange-400 to-orange-600", alt: "Postman API testing logo" },
+  { id: 26, name: "VS Code",   photo: vscode,   colorClass: "bg-gradient-to-br from-sky-500 to-blue-700", alt: "Visual Studio Code logo" },
+  { id: 27, name: "Figma",     photo: figma,    colorClass: "bg-gradient-to-br from-rose-500 to-purple-600", alt: "Figma logo" },
+  // { id: 28, name: "Notion",    photo: notion,   colorClass: "bg-gradient-to-br from-neutral-700 to-neutral-900", alt: "Notion workspace logo" },
+  { id: 29, name: "Trello",    photo: trello,   colorClass: "bg-gradient-to-br from-cyan-600 to-blue-700", alt: "Trello kanban board logo" },
+{ 
+  id: 30, 
+  name: "Tableau", 
+  photo: tableau, 
+  colorClass: "bg-gradient-to-br from-blue-500 to-indigo-700", 
+  alt: "Tableau data visualization logo" 
+},
+
+{ 
+  id: 31, 
+  name: "Power Automate", 
+  photo: powerautomate, 
+  colorClass: "bg-gradient-to-br from-blue-400 to-blue-700", 
+  alt: "Microsoft Power Automate logo" 
+},
 ];
 
 

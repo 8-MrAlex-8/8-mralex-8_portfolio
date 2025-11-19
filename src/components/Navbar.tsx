@@ -5,7 +5,7 @@ const Navbar = () => {
   const [active, setActive] = useState("home");
 
   return (
-    <header className="inset-x-0 fixed shadow-md bg-white z-30">
+    <header className="inset-x-0 fixed shadow-md bg-white z-50">
       <div className="mx-auto max-w-6xl px-6 lg:px-4">
         <div className="flex items-center justify-between py-4">
           <button
@@ -31,9 +31,17 @@ const Navbar = () => {
                     ?.scrollIntoView({ behavior: "smooth" });
                 }}
                 className={`
-                  text-sm font-medium transition
-                  ${active === item.id ? "text-purple-600" : "text-neutral-600"}
-                  `}
+                  relative text-sm font-medium
+                  after:content-[''] after:absolute after:left-0 after:-bottom-px hover:cursor-pointer
+                  after:h-0.5 after:w-full after:bg-purple-600
+                  after:scale-x-0 after:origin-left after:transition-transform after:duration-300
+                  hover:after:scale-x-100
+                ${
+                  active === item.id
+                    ? "text-purple-600 after:scale-x-100"
+                    : "text-neutral-600"
+                }
+              `}
               >
                 {item.label}
               </button>

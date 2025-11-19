@@ -34,7 +34,9 @@ const ExperienceCard = ({ experience, isCompact }: ExperienceCardProps) => {
 
         {isCompact ? (
           <ul className="text-gray-300 leading-[1.8] mb-4 space-y-4 list-disc ml-6 whitespace-pre-line">
-            <li>{experience.compactDescription}</li>
+            {experience.compactDescription.map((bullet) => {
+              return <li key={bullet}>{bullet}</li>;
+            })}
           </ul>
         ) : (
           <p className="text-gray-300 leading-relaxed mb-4 whitespace-pre-line">
@@ -46,7 +48,7 @@ const ExperienceCard = ({ experience, isCompact }: ExperienceCardProps) => {
           {experience.tech.map((tech) => (
             <span
               key={tech}
-              className="inline-block px-3 py-1 bg-slate-700/50 text-gray-300 rounded-md text-sm border border-gray-600/50"
+              className="inline-block px-3 py-1 bg-linear-to-r from-sky-600/50  to-blue-500/60 text-gray-300 rounded-lg text-sm border border-gray-600/50"
             >
               {tech}
             </span>
