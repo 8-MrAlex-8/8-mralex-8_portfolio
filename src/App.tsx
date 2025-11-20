@@ -22,9 +22,6 @@ function App() {
         <Projects />
         <Contact />
         <Resume />
-        {/* <section className= "bg-black min-h-screen pt-12 md:pt-24 pb-12 md:pb-0 px-10 w-full md:px-16 gap-8">
-          <h2 className = "text-white">Hello World</h2>
-        </section> */}
       </main>
     </div>
   );
