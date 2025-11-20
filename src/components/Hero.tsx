@@ -13,7 +13,7 @@ const Hero = () => {
           <p className="mb-3 text-sm font-semibold text-amber-500">
             Developer, Data Geek, Mathematician.
           </p>
-          <h1 className="text-4xl font-bold text-base-100 md:text-5xl">
+          <h1 className="text-4xl font-bold heading-gradient-blue-white md:text-5xl heading-glow">
             Hi, I'm Lanz Alexander Malto.
           </h1>
           <p className="mt-4 text-base-300">
@@ -44,7 +44,7 @@ const Hero = () => {
         className="min-h-screen w-full pb-12 md:pb-0 flex flex-col justify-center items-center gap-4
       bg-linear-to-b from-slate-900 via-slate-800 to-slate-900 py-8"
       >
-        <h2 className="text-4xl font-bold text-base-100">
+        <h2 className="text-4xl font-bold heading-gradient-lavender heading-glow">
           Educational Background
         </h2>
 

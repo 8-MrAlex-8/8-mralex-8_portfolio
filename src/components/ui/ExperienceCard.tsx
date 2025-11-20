@@ -18,7 +18,7 @@ const ExperienceCard = ({ experience, isCompact }: ExperienceCardProps) => {
       <div className="relative bg-linear-to-br from-slate-800 to-slate-900 border border-gray-700/50 rounded-xl p-6 md:p-8 shadow-xl transition-all duration-300 hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-500/10 group-hover:-translate-y-1">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
           <div>
-            <h4 className="text-xl md:text-2xl font-bold text-white mb-2">
+            <h4 className="text-xl md:text-2xl font-bold heading-gradient-blue-white mb-2 heading-glow">
               {experience.company}
             </h4>
             <p className="text-blue-400 font-semibold mb-1">

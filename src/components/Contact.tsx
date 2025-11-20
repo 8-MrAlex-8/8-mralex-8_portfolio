@@ -18,7 +18,7 @@ const Contact = () => {
             <div className="space-y-8">
               {/* Text */}
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                <h2 className="text-3xl md:text-4xl font-bold heading-gradient-blue-white mb-4 heading-glow">
                   Get in Touch
                 </h2>
                 <p className="text-gray-400 leading-relaxed text-base">

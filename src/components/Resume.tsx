@@ -9,7 +9,9 @@ const Resume = () => {
       <section className="min-h-screen pt-8 md:pt-28 pb-12 md:pb-8 px-10 w-full md:px-16 text-white">
         {/* Left Column */}
         <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
-          <h2 className="text-3xl font-bold mb-2">Resume</h2>
+          <h2 className="text-3xl font-bold mb-2 heading-gradient-lavender heading-glow">
+            Resume
+          </h2>
           <p className="text-md md:text-sm italic">
             My professional experience and qualifications.
           </p>

@@ -4,10 +4,10 @@ const educationData = [
     level: "College",
     school: "Silliman University",
     batch: "[Batch 2026] B.S. Computer Science",
-    bgColor: "[rgba(251,44,54,0.27)]",
-    badgeColor: "rose-800/30 border-amber-700/40",
+    bgColor: "bg-red-600/20",
+    badgeColor: "bg-rose-800/30 border-amber-700/40",
     subtitleColor: "text-cyan-500",
-    borderColor: "border-[rgba(251,44,54,0.3)]",
+    borderColor: "border-red-300/40",
     shadowColor: "rgba(6,182,212,0.25)",
     awards: [
       "Level III Class Honors",
@@ -21,8 +21,8 @@ const educationData = [
     level: "College",
     school: "University of Santo Tomas",
     batch: "[A.Y. 2020-2021] B.S. Accountancy",
-    bgColor: "amber-200/40",
-    badgeColor: "amber-800/30 border-amber-500/20",
+    bgColor: "bg-amber-200/40",
+    badgeColor: "bg-amber-800/30 border-amber-500/20",
     subtitleColor: "text-teal-400",
     borderColor: "border-amber-200/50",
     shadowColor: "rgba(6,182,212,0.25)",
@@ -33,8 +33,8 @@ const educationData = [
     level: "Senior High School",
     school: "University of Santo Tomas",
     batch: "[Batch 2020] Accountancy, Business, and Management (ABM) Strand",
-    bgColor: "amber-200/40",
-    badgeColor: "amber-800/30 border-amber-500/20",
+    bgColor: "bg-amber-200/40",
+    badgeColor: "bg-amber-800/30 border-amber-500/20",
     subtitleColor: "text-teal-400",
     borderColor: "border-amber-200/50",
     shadowColor: "rgba(6,182,212,0.25)",
@@ -45,8 +45,8 @@ const educationData = [
     level: "Elementary - Junior High School",
     school: "St. Mary's Academy - Pasay City",
     batch: "",
-    bgColor: "cyan-200/25",
-    badgeColor: "cyan-800/70 border-cyan-500/20",
+    bgColor: "bg-cyan-200/25",
+    badgeColor: "bg-cyan-800/70 border-cyan-500/20",
     subtitleColor: "text-teal-400",
     borderColor: "border-cyan-200/50",
     shadowColor: "rgba(6,182,212,0.25)",
@@ -64,12 +64,12 @@ const EducCard = () => {
             w-[75dvw]
             md:w-[40dvw]
             flex-wrap 
-            bg-${edu.bgColor} 
+            ${edu.bgColor} 
             rounded-2xl 
             shadow-[0_4px_30px_rgba(0,0,0,0.1)] 
             backdrop-blur-[20px] 
             border
-            border-${edu.borderColor} 
+            ${edu.borderColor} 
             transition-transform duration-300 
             hover:scale-105
             hover:shadow-xl
@@ -87,7 +87,7 @@ const EducCard = () => {
             <span
               className={`
                 badge badge-md 
-                bg-${edu.badgeColor} 
+                ${edu.badgeColor} 
                 text-white
               `}
             >

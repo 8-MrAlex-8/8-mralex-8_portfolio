@@ -70,7 +70,7 @@ const Experience = () => {
         <div className="">
           {/* Header */}
           <div className="text-center mb-10">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold heading-gradient-cool mb-4 heading-glow">
               My Experience
             </h2>
             <p className="text-md text-gray-400 italic">

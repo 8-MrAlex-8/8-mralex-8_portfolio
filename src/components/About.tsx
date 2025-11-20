@@ -43,7 +43,7 @@ const About = () => {
             <Star className="w-4 h-4 text-white" />
           </div>
 
-          <h2 className="text-xl font-bold text-white md:text-2xl">
+          <h2 className="text-xl font-bold heading-gradient-purple-white md:text-2xl heading-glow">
             Chasing Professional Excellence
           </h2>
         </section>
@@ -229,7 +229,7 @@ const About = () => {
             <UserRound className="w-4 h-4 text-white" />
           </div>
 
-          <h2 className="text-xl font-bold text-white md:text-2xl">
+          <h2 className="text-xl font-bold heading-gradient-cool md:text-2xl heading-glow">
             Beyond the Screen
           </h2>
         </section>

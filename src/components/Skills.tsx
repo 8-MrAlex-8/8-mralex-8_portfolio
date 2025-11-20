@@ -8,7 +8,9 @@ const Skills = () => {
       bg-linear-to-b from-slate-900 via-slate-800 to-slate-900 text-white"
     >
       <div className="text-left mb-10">
-        <h2 className="text-4xl font-bold">Skills</h2>
+        <h2 className="text-4xl font-bold heading-gradient-purple-white heading-glow">
+          Skills
+        </h2>
         <p className="text-md md:text-md mt-2 italic">
           Your resident all-rounder's kit.
         </p>
