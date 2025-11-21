@@ -1,6 +1,12 @@
 import type { ProjectItem } from "../../data/ProjectData.ts";
 
-const ProjectCard = ({ name, type, desc, techStack }: ProjectItem) => {
+const ProjectCard = ({
+  name,
+  type,
+  short_desc,
+  long_desc,
+  techStack,
+}: ProjectItem) => {
   return (
     <div
       className="relative w-[60dvw] md:w-[25dvw] rounded-2xl backdrop-blur-xl bg-white/10 border border-white/20 shadow-xl 
@@ -18,14 +24,15 @@ const ProjectCard = ({ name, type, desc, techStack }: ProjectItem) => {
       </figure>
 
       <div className="relative card-body text-gray-200">
-        <h2 className="card-title text-white drop-shadow-sm">
-          {name}
+        <div className="flex flex-col justify-start items-start gap-4">
           <div className="badge bg-cyan-500/20 text-cyan-300 backdrop-blur-xl border border-cyan-400/20">
             {type}
           </div>
-        </h2>
+          <h2 className="card-title text-white drop-shadow-sm">{name}</h2>
+        </div>
 
-        <p className="text-gray-300/80 line-clamp-3">{desc}</p>
+        <p className="text-gray-300/80 line-clamp-3">{short_desc}</p>
+        <p className="text-gray-300/80 line-clamp-3 hidden">{long_desc}</p>
 
         <div className="card-actions justify-start mt-4">
           {techStack.map((technology) => {

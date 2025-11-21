@@ -28,7 +28,8 @@ const Projects = () => {
                   id={project.id}
                   name={project.name}
                   type={project.type}
-                  desc={project.desc}
+                  short_desc={project.short_desc}
+                  long_desc={project.long_desc}
                   techStack={project.techStack}
                 />
               );

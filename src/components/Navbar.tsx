@@ -49,7 +49,7 @@ const Navbar = () => {
           </nav>
 
           <div className="flex items-center gap-2">
-            <button
+            {/* <button
               aria-label="Toggle theme"
               className="rounded-md border border-neutral-200 p-2 hover:bg-neutral-100 transition"
             >
@@ -61,7 +61,7 @@ const Navbar = () => {
               >
                 <path d="M21.64 13.64A9 9 0 1 1 10.36 2.36 7 7 0 1 0 21.64 13.64z" />
               </svg>
-            </button>
+            </button> */}
 
             <button
               className="md:hidden rounded-md p-2 hover:bg-neutral-100 dark:hover:bg-neutral-800"
