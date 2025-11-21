@@ -46,6 +46,7 @@ const Hero = () => {
           </section>
         </div>
       </section>
+
       {/* Education and Stuff */}
       <section
         id="home"

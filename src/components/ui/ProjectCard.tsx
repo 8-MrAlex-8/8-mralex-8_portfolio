@@ -1,24 +1,37 @@
 const ProjectCard = () => {
   return (
-    <div className="card text-black bg-base-100 w-96 shadow-sm">
-      <figure>
+    <div className="relative w-[60dvw] md:w-[25dvw] p-px rounded-2xl backdrop-blur-xl bg-white/10 border border-white/20 shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden">
+      {/* Glass highlight */}
+      <div className="absolute inset-0 bg-linear-to-br from-white/10 via-white/5 to-transparent pointer-events-none" />
+
+      <figure className="overflow-hidden rounded-t-2xl">
         <img
           src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
           alt="Shoes"
+          className="w-full h-48 object-cover opacity-90 hover:opacity-100 transition-all duration-300"
         />
       </figure>
-      <div className="card-body">
-        <h2 className="card-title">
+
+      <div className="relative card-body text-gray-200">
+        <h2 className="card-title text-white drop-shadow-sm">
           Card Title
-          <div className="badge badge-secondary">NEW</div>
+          <div className="badge bg-cyan-500/20 text-cyan-300 backdrop-blur-xl border border-cyan-400/20">
+            NEW
+          </div>
         </h2>
-        <p>
+
+        <p className="text-gray-300/80">
           A card component has a figure, a body part, and inside body there are
-          title and actions parts
+          title and actions parts.
         </p>
-        <div className="card-actions justify-end">
-          <div className="badge badge-outline">Fashion</div>
-          <div className="badge badge-outline">Products</div>
+
+        <div className="card-actions justify-end mt-4">
+          <div className="badge badge-outline border-white/20 text-gray-300 bg-white/5 backdrop-blur-md">
+            Fashion
+          </div>
+          <div className="badge badge-outline border-white/20 text-gray-300 bg-white/5 backdrop-blur-md">
+            Products
+          </div>
         </div>
       </div>
     </div>

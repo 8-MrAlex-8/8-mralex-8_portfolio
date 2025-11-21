@@ -1,4 +1,4 @@
-// photo source: https://unsplash.com/photos/a-black-and-purple-background-with-a-circular-design-9mwOUgWNwMU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+// photo source: https://unsplash.com/photos/an-abstract-purple-background-with-a-black-background-5Q9Gf0WSyLk?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 import { useState } from "react";
 import {
   Star,
@@ -20,10 +20,10 @@ const About = () => {
     <>
       <section
         id="about"
-        className={`h-dvh bg-[url(/src/assets/background-two.jpg)] bg-no-repeat bg-cover bg-center`}
+        className={`h-dvh bg-[url(/src/assets/background-two.jpg)] bg-no-repeat bg-size-[100%_100%] bg-black`}
       >
         <div className="relative">
-          <div className="absolute inset-0 bg-black/70" />
+          <div className="absolute inset-0 bg-black/50" />
           <main
             className={`relative z-10 min-h-screen w-full pt-12 md:pt-16 pb-12 md:pb-0 gap-8 
           flex flex-wrap justify-center items-center text-slate-200`}

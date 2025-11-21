@@ -53,59 +53,71 @@ const StyledWrapper = styled.div`
   }
 `;
 
-const Experience = () => {
+const NewExperience = () => {
   const [isCompact, setCompact] = useState(false);
   const [isFull, setFull] = useState(true);
 
   return (
-    <main
-      className="min-h-screen w-full pt-8 md:pt-28 pb-12 md:pb-8 px-10 bg-linear-to-b from-slate-900 via-slate-800 to-slate-900
-    flex justify-start items-center "
-    >
-      {/* sidebar */}
-      <nav className="w-[10dvw] min-h-screen pt-28 bg-amber-100">
-        <p>hello world</p>
-      </nav>
-      <section id="experience">
-        <div className="">
+    <>
+      <main
+        id="experience"
+        className="min-h-screen w-full pb-12 md:pb-0 gap-0
+            bg-linear-to-b from-slate-900 via-slate-800 to-slate-900
+            flex justify-start items-start relative"
+      >
+        {/* Navbar Section */}
+        <section className="min-h-dvh w-[10dvw] sticky left-0 top-0 ">
+          <nav
+            className="w-[10dvw] min-h-screen text-white
+      pt-12 md:pt-24 z-50 flex flex-col self-start gap-y-6
+      border-l border-gray-500 bg-transparent"
+          >
+            <div className="flex flex-row">
+              <div className="w-10 h-0.5 bg-gray-500 mt-6"></div>
+              <StyledWrapper>
+                <button
+                  className={`button ${isFull ? "selected" : ""}`}
+                  onClick={() => {
+                    setFull(true);
+                    setCompact(false);
+                  }}
+                >
+                  Full
+                </button>
+              </StyledWrapper>
+            </div>
+
+            <div className="flex flex-row">
+              <div className="w-10 h-0.5 bg-gray-500 mt-6"></div>
+              <StyledWrapper>
+                <button
+                  className={`button ${isCompact ? "selected" : ""}`}
+                  onClick={() => {
+                    setCompact(true);
+                    setFull(false);
+                  }}
+                >
+                  Short
+                </button>
+              </StyledWrapper>
+            </div>
+          </nav>
+        </section>
+        {/* Content Section */}
+        <section className="min-h-dvh w-[90dvw] bg-transparent pt-12 md:pt-24">
           {/* Header */}
           <div className="text-center mb-10">
-            <h2 className="text-4xl md:text-5xl font-bold heading-gradient-cool mb-4 heading-glow">
+            <h2 className="text-4xl md:text-5xl font-bold heading-gradient-cool mb-4 heading-glow leading-tight">
               My Experience
             </h2>
             <p className="text-md text-gray-400 italic">
               A glimpse into my professional journey and achievements.
             </p>
-            <div className="w-24 h-1 bg-linear-to-r from-transparent via-blue-500 to-transparent mx-auto mt-6"></div>
-          </div>
-
-          <div className="mt-6 mb-12 flex flex-row justify-center items-center gap-4">
-            <StyledWrapper>
-              <button
-                className={`button ${isCompact ? "selected" : ""}`}
-                onClick={() => {
-                  setCompact(true);
-                  setFull(false);
-                }}
-              >
-                Compact
-              </button>
-            </StyledWrapper>
-            <StyledWrapper>
-              <button
-                className={`button ${isFull ? "selected" : ""}`}
-                onClick={() => {
-                  setFull(true);
-                  setCompact(false);
-                }}
-              >
-                Full
-              </button>
-            </StyledWrapper>
+            <div className="w-75% h-1 bg-linear-to-l from-blue-500 via-transparent to-blue-500 mt-6 mx-6"></div>
           </div>
 
           {/* Timeline Container */}
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-5xl mx-auto pr-24">
             {/* Internship Experience Section */}
             <div className="mb-20">
               <div className="flex items-center gap-4 mb-8">
@@ -176,10 +188,10 @@ const Experience = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </>
   );
 };
 
-export default Experience;
+export default NewExperience;
