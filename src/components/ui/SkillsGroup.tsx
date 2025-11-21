@@ -5,7 +5,7 @@ import { Code2, Blend, Database, ToolCase } from "lucide-react";
 const SkillsGroup = () => {
   return (
     <>
-      <main className="flex flex-row flex-wrap justify-center items-center gap-8">
+      <main className="flex flex-row flex-wrap justify-center items-center gap-8 pb-12">
         {/* Card 1 */}
         <section
           className="md:min-h-[40dvh] md:w-[40dvw] bg-sky-200/30 border border-sky-400/40 rounded-2xl p-3 flex flex-col gap-6 pb-4
