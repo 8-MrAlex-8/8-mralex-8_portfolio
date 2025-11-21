@@ -5,11 +5,11 @@ const Navbar = () => {
   const [active, setActive] = useState("home");
 
   return (
-    <header className="inset-x-0 fixed shadow-md bg-white z-100">
+    <header className="inset-x-0 fixed bg-black z-100 text-base-200 border-b border-gray-800 shadow-2xl">
       <div className="mx-auto max-w-6xl px-6 lg:px-4">
         <div className="flex items-center justify-between py-4">
           <button
-            className="text-lg font-semibold tracking-tight text-neutral-900"
+            className="text-lg font-semibold tracking-tight"
             onClick={() => {
               setActive("home");
               document
@@ -20,7 +20,7 @@ const Navbar = () => {
             Lanz Malto
           </button>
 
-          <nav className="hidden gap-6 md:flex">
+          <nav className="hidden gap-6 md:flex ">
             {NavItems.map((item) => (
               <button
                 key={item.id}
@@ -39,7 +39,7 @@ const Navbar = () => {
                 ${
                   active === item.id
                     ? "text-purple-600 after:scale-x-100"
-                    : "text-neutral-600"
+                    : "text-base-200"
                 }
               `}
               >

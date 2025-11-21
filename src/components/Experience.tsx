@@ -69,8 +69,8 @@ const NewExperience = () => {
         <section className="min-h-dvh w-[10dvw] sticky left-0 top-0 ">
           <nav
             className="w-[10dvw] min-h-screen text-white
-      pt-12 md:pt-24 z-50 flex flex-col self-start gap-y-6
-      border-l border-gray-500 bg-transparent"
+                pt-12 md:pt-24 z-50 flex flex-col self-start gap-y-6
+                border-l border-gray-500 bg-transparent"
           >
             <div className="flex flex-row">
               <div className="w-10 h-0.5 bg-gray-500 mt-6"></div>

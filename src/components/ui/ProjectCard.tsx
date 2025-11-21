@@ -1,6 +1,11 @@
-const ProjectCard = () => {
+import type { ProjectItem } from "../../data/ProjectData.ts";
+
+const ProjectCard = ({ name, type, desc, techStack }: ProjectItem) => {
   return (
-    <div className="relative w-[60dvw] md:w-[25dvw] p-px rounded-2xl backdrop-blur-xl bg-white/10 border border-white/20 shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden">
+    <div
+      className="relative w-[60dvw] md:w-[25dvw] rounded-2xl backdrop-blur-xl bg-white/10 border border-white/20 shadow-xl 
+    hover:shadow-2xl transition-all duration-300 overflow-hidden"
+    >
       {/* Glass highlight */}
       <div className="absolute inset-0 bg-linear-to-br from-white/10 via-white/5 to-transparent pointer-events-none" />
 
@@ -14,24 +19,22 @@ const ProjectCard = () => {
 
       <div className="relative card-body text-gray-200">
         <h2 className="card-title text-white drop-shadow-sm">
-          Card Title
+          {name}
           <div className="badge bg-cyan-500/20 text-cyan-300 backdrop-blur-xl border border-cyan-400/20">
-            NEW
+            {type}
           </div>
         </h2>
 
-        <p className="text-gray-300/80">
-          A card component has a figure, a body part, and inside body there are
-          title and actions parts.
-        </p>
+        <p className="text-gray-300/80 line-clamp-3">{desc}</p>
 
-        <div className="card-actions justify-end mt-4">
-          <div className="badge badge-outline border-white/20 text-gray-300 bg-white/5 backdrop-blur-md">
-            Fashion
-          </div>
-          <div className="badge badge-outline border-white/20 text-gray-300 bg-white/5 backdrop-blur-md">
-            Products
-          </div>
+        <div className="card-actions justify-start mt-4">
+          {techStack.map((technology) => {
+            return (
+              <div className="badge badge-outline border-white/20 text-gray-300 bg-white/5 backdrop-blur-md">
+                {technology}
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
