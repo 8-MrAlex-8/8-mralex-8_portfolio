@@ -25,7 +25,7 @@ const ProjectList: ProjectItem[] = [
     },
     {
         id: 2,
-        thumbnail: "",
+        thumbnail: "/dockside-thumbnail.png",
         name: "Dockside Hotel: A Hotel Reservation Management Application",
         type: "DEV",
         short_desc: "A web platform for hotel bookings, room management, and reporting.",
