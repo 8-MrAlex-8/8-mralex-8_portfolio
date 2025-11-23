@@ -1,6 +1,7 @@
 import type { ProjectItem } from "../../data/ProjectData.ts";
 
 const ProjectCard = ({
+  thumbnail,
   name,
   type,
   short_desc,
@@ -8,18 +9,16 @@ const ProjectCard = ({
   techStack,
 }: ProjectItem) => {
   return (
-    <div
-      className="relative w-[60dvw] md:w-[25dvw] rounded-2xl backdrop-blur-xl bg-white/10 border border-white/20 shadow-xl 
-    hover:shadow-2xl transition-all duration-300 overflow-hidden"
-    >
+    <div className="relative w-full max-w-[720px] sm:max-w-[520px] md:max-w-[360px] rounded-2xl backdrop-blur-xl bg-white/10 border border-white/20 shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden">
       {/* Glass highlight */}
       <div className="absolute inset-0 bg-linear-to-br from-white/10 via-white/5 to-transparent pointer-events-none" />
 
-      <figure className="overflow-hidden rounded-t-2xl">
+      <figure className="overflow-hidden rounded-t-2xl aspect-[4/3] md:aspect-[16/9] w-full">
         <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes"
-          className="w-full h-48 object-cover opacity-90 hover:opacity-100 transition-all duration-300"
+          src={thumbnail || ""}
+          alt={name}
+          loading="lazy"
+          className="w-full h-full object-cover block transform-gpu transition-transform duration-300 hover:scale-105"
         />
       </figure>
 
@@ -34,14 +33,15 @@ const ProjectCard = ({
         <p className="text-gray-300/80 line-clamp-3">{short_desc}</p>
         <p className="text-gray-300/80 line-clamp-3 hidden">{long_desc}</p>
 
-        <div className="card-actions justify-start mt-4">
-          {techStack.map((technology) => {
-            return (
-              <div className="badge badge-outline border-white/20 text-gray-300 bg-white/5 backdrop-blur-md">
-                {technology}
-              </div>
-            );
-          })}
+        <div className="card-actions flex-wrap justify-start mt-4 flex gap-2">
+          {techStack.map((technology, idx) => (
+            <span
+              key={`${name}-tech-${idx}`}
+              className="badge badge-outline border-white/20 text-gray-300 bg-white/5 backdrop-blur-md"
+            >
+              {technology}
+            </span>
+          ))}
         </div>
       </div>
     </div>

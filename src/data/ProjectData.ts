@@ -1,5 +1,6 @@
 export type ProjectItem = {
     id: number,
+    thumbnail: string,
     name: string,
     type: string, // DEV, DATA, MATH
     short_desc: string,
@@ -10,6 +11,7 @@ export type ProjectItem = {
 const ProjectList: ProjectItem[] = [
     {
         id: 1,
+        thumbnail: "",
         name: "RoomSync: A Smart Boardmate Powered by AI",
         type: "DEV",
         short_desc: "A roommate-matching platform with peer ratings and location-based filtering.",
@@ -23,6 +25,7 @@ const ProjectList: ProjectItem[] = [
     },
     {
         id: 2,
+        thumbnail: "",
         name: "Dockside Hotel: A Hotel Reservation Management Application",
         type: "DEV",
         short_desc: "A web platform for hotel bookings, room management, and reporting.",
@@ -34,6 +37,7 @@ const ProjectList: ProjectItem[] = [
     },
     {
         id: 3,
+        thumbnail: "/lapuk-thumbnail.png",
         name: "LAPUK: A Garbage Segregation Aid Application",
         type: "DEV",
         short_desc: "A web app to help users segregate and track waste for recycling and sustainability.",
@@ -45,6 +49,7 @@ const ProjectList: ProjectItem[] = [
     },
     {
         id: 4,
+        thumbnail: "/rps-thumbnail.png",
         name: "RPS Minus-One",
         type: "DEV",
         short_desc: "A creative twist on the classic game removing one move for added strategy.",
@@ -56,6 +61,7 @@ const ProjectList: ProjectItem[] = [
     },
     {
         id: 5,
+        thumbnail: "/rmj-thumbnail.png",
         name: "React Mood Journal",
         type: "DEV",
         short_desc: "A mood-tracking journaling app to reflect on emotions over time.",
@@ -67,6 +73,7 @@ const ProjectList: ProjectItem[] = [
     },
     {
         id: 6,
+        thumbnail: "",
         name: "DMP Restaurant Management System",
         type: "DEV",
         short_desc: "A full-featured restaurant POS and inventory management system.",
