@@ -20,3 +20,5 @@ const NdaProjectList: ProjectItem[] = [
         techStack: ['HTML/Bootstrap CSS/JS', 'mySQL', 'jQuery', 'Vue.js', 'DataTables', "Material UI"]
     },
 ]
+
+export default NdaProjectList;

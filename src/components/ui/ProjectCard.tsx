@@ -14,7 +14,7 @@ const ProjectCard = ({
       {/* Glass highlight */}
       <div className="absolute inset-0 bg-linear-to-br from-white/10 via-white/5 to-transparent pointer-events-none" />
 
-      <figure className="overflow-hidden rounded-t-2xl aspect-4/3 md:aspect-16/9 w-full">
+      <figure className="overflow-hidden rounded-t-2xl aspect-4/3 md:aspect-video w-full">
         {id > 100 ? (
           <div className="bg-red-950 h-full flex justify-center items-center">
             <h2 className="text-3xl font-extrabold text-white text-center">

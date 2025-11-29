@@ -4,7 +4,6 @@ import { Download } from "lucide-react";
 import ResumeModal from "./ui/ResumeModal";
 
 const Resume = () => {
-  const [isHovered, setHovered] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
   const viewButtonRef = useRef<HTMLButtonElement | null>(null);
 
@@ -56,21 +55,16 @@ const Resume = () => {
         </div>
 
         {/* Right Column: Thumbnail */}
-        <div
-          className="w-full md:w-1/2 flex justify-center items-center"
-          onMouseEnter={() => {
-            setHovered(true);
-          }}
-          onMouseLeave={() => {
-            setHovered(false);
-          }}
-        >
-          <div id="thumbnail" className="relative group">
+        <div className="w-full md:w-1/2 flex justify-center items-center">
+          <div
+            id="thumbnail"
+            className="relative group hover:shadow-white shadow-lg"
+          >
             <div className="absolute -inset-1 bg-linear-to-r from-indigo-500 to-purple-500 rounded-md opacity-0 group-hover:opacity-20 blur transition duration-300 group-hover:duration-200"></div>
             <img
               src={ResumeThumbnail}
               alt="Resume Thumbnail"
-              className="relative object-contain h-[60dvh] md:h-[75dvh] rounded-md shadow-2xl shadow-indigo-500/20 hover:shadow-indigo-500/40 transition-all duration-300"
+              className="relative object-contain h-[60dvh] md:h-[75dvh] rounded-md shadow-indigo-500/20 transition-all duration-300"
             />
             {/* Dark Overlay on Hover */}
             <div className="absolute inset-0 bg-black/25 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center cursor-pointer">
