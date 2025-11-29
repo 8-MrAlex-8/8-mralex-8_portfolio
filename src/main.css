@@ -15,23 +15,23 @@
 
   /* Eye-soothing gradients for headings */
   .heading-gradient-soft {
-    @apply bg-gradient-to-r from-slate-100 via-blue-200 to-indigo-300 bg-clip-text text-transparent;
+    @apply bg-linear-to-r from-slate-100 via-blue-200 to-indigo-300 bg-clip-text text-transparent;
   }
 
   .heading-gradient-blue-white {
-    @apply bg-gradient-to-r from-white via-sky-200 to-blue-300 bg-clip-text text-transparent;
+    @apply bg-linear-to-r from-white via-sky-200 to-blue-300 bg-clip-text text-transparent;
   }
 
   .heading-gradient-purple-white {
-    @apply bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent;
+    @apply bg-linear-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent;
   }
 
   .heading-gradient-cool {
-    @apply bg-gradient-to-r from-slate-50 via-cyan-200 to-blue-300 bg-clip-text text-transparent;
+    @apply bg-linear-to-r from-slate-50 via-cyan-200 to-blue-300 bg-clip-text text-transparent;
   }
 
   .heading-gradient-lavender {
-    @apply bg-gradient-to-r from-slate-100 via-indigo-200 to-purple-300 bg-clip-text text-transparent;
+    @apply bg-linear-to-r from-slate-100 via-indigo-200 to-purple-300 bg-clip-text text-transparent;
   }
 
   .heading-glow {

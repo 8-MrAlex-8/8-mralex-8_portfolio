@@ -1,6 +1,7 @@
 import type { ProjectItem } from "../../data/ProjectData.ts";
 
 const ProjectCard = ({
+  id,
   thumbnail,
   name,
   type,
@@ -13,13 +14,21 @@ const ProjectCard = ({
       {/* Glass highlight */}
       <div className="absolute inset-0 bg-linear-to-br from-white/10 via-white/5 to-transparent pointer-events-none" />
 
-      <figure className="overflow-hidden rounded-t-2xl aspect-[4/3] md:aspect-[16/9] w-full">
-        <img
-          src={thumbnail || ""}
-          alt={name}
-          loading="lazy"
-          className="w-full h-full object-cover block transform-gpu transition-transform duration-300 hover:scale-105"
-        />
+      <figure className="overflow-hidden rounded-t-2xl aspect-4/3 md:aspect-16/9 w-full">
+        {id > 100 ? (
+          <div className="bg-red-950 h-full flex justify-center items-center">
+            <h2 className="text-3xl font-extrabold text-white text-center">
+              Under NDA
+            </h2>
+          </div>
+        ) : (
+          <img
+            src={thumbnail || ""}
+            alt={name}
+            loading="lazy"
+            className="w-full h-full object-cover block transform-gpu transition-transform duration-300 hover:scale-105"
+          />
+        )}
       </figure>
 
       <div className="relative card-body text-gray-200">

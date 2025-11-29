@@ -5,7 +5,7 @@ const Skills = () => {
     <div
       id="skills"
       className="min-h-screen pt-12 md:pt-24 pb-12 md:pb-0 px-10 w-full md:px-16 gap-8 
-      bg-linear-to-b from-black via-purple-950/95 to-black text-white"
+      bg-linear-to-b from-black via-purple-950/95 to-black text-white "
     >
       <div className="text-left mb-10">
         <h2 className="text-4xl font-bold heading-gradient-purple-white heading-glow">

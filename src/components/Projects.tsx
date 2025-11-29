@@ -1,11 +1,30 @@
 // bg image source: https://unsplash.com/photos/a-black-background-with-a-blue-abstract-design-OfdOEdGYiuk?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+import { useEffect, useRef } from "react";
 import ProjectCard from "../components/ui/ProjectCard";
 import ProjectList from "../data/ProjectData.ts";
 import type { ProjectItem } from "../data/ProjectData.ts";
 
 const Projects = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].intersectionRatio <= 0) return;
+      console.log("intersected @ project section");
+    });
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <section
+      ref={sectionRef}
       id="projects"
       className="min-h-dvh bg-[url(/src/assets/background-three.jpg)] bg-no-repeat bg-cover bg-center"
     >
