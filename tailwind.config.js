@@ -43,7 +43,8 @@ export default {
                 '300%': '300%',
             },
             fontFamily: {
-                sans: ["Inter", "ui-sans-serif", "system-ui"],
+                sans: ["DM Sans", "sans-serif"],
+                syne: ["Syne", "sans-serif"],
             },
         },
     },

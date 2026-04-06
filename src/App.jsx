@@ -1,11 +1,11 @@
-import Hero from './components/Hero'
-import Projects from './components/Projects'
-import About from './components/About'
-import Experience from './components/Experience'
-import Skills from './components/Skills'
-import Contact from './components/Contact'
-import Background from './components/Background'
-import Navbar from './components/Navbar'
+import Hero from "./components/Hero";
+import Projects from "./components/Projects";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
+import Background from "./components/Background";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -15,13 +15,13 @@ function App() {
       <div className="relative z-10">
         <Hero />
         <About />
-        <Projects />
         <Experience />
+        <Projects />
         <Skills />
         <Contact />
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
