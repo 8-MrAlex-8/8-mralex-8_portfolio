@@ -101,16 +101,17 @@ const mobileProjects = [
     accentBg: "bg-indigo-900/20",
     accentBorder: "border-indigo-500/20",
     images: [
-      "/lapuk-portrait-0.png",
-      "/lapuk-portrait-1.png",
-      "/lapuk-portrait-2.png",
-      "/lapuk-portrait-3.png",
+      "/lapuk-portrait-0.jpg",
+      "/lapuk-portrait-1.jpg",
+      "/lapuk-portrait-2.jpg",
+      "/lapuk-portrait-3.jpg",
+      "/lapuk-portrait-4.jpg",
     ],
     nda: false,
     links: {
-      mockup_demo: "https://lapuk-android.vercel.app",
-      github: "https://github.com/8-MrAlex-8/lapuk-android",
-      figma: "https://figma.com/file/lapuk",
+      github: "https://github.com/gr2ws/lapuk-app-frontend",
+      figma:
+        "https://www.figma.com/design/ek1zGPQ6HoKQ2sBZl2ltDn/LAPUK-UI?node-id=0-1&t=MVuWpCZ4xP7Cn116-1",
     },
   },
   {
@@ -126,10 +127,10 @@ const mobileProjects = [
     accentBg: "bg-cyan-900/20",
     accentBorder: "border-cyan-500/20",
     images: [
-      "/roomsync-portrait-0.png",
-      "/roomsync-portrait-1.png",
-      "/roomsync-portrait-2.png",
-      "/roomsync-portrait-3.png",
+      "/roomsync-portrait-0.jpg",
+      "/roomsync-portrait-1.jpg",
+      "/roomsync-portrait-2.jpg",
+      "/roomsync-portrait-3.jpg",
     ],
     nda: false,
     links: {
@@ -234,11 +235,13 @@ const experienceProjects = [
     links: {
       live_site_youth: null,
       live_site_parent: null,
-      mockup_demo: "",
+      mockup_demo: null,
       github: null,
-      figma: "https://figma.com/file/axolert", // Note: link points to axolert in original payload
+      figma:
+        "https://www.figma.com/design/maJ957R5YRkMj43E8W5uQ8/AgriFlow-UI?node-id=0-1&t=IiIWjdyxEDLsdY8B-1", // Note: link points to axolert in original payload
       documentation: null,
-      win_article: "https://news.example.com/agriflow-win",
+      win_article:
+        "https://su.edu.ph/su-ccs-clinches-1st-runner-up-in-ai-pitching-competition/",
     },
   },
   {
@@ -250,7 +253,7 @@ const experienceProjects = [
     stats: "Talleco, Inc. Provincial Inter-School Hackathon",
     colSpan: "md:col-span-2",
     color: "bg-blue-900/20",
-    nda: true,
+    nda: false,
     links: {
       live_site_youth: null,
       live_site_parent: null,
@@ -258,7 +261,7 @@ const experienceProjects = [
       github: null,
       figma: null,
       documentation: null,
-      win_article: null,
+      win_article: "https://www.facebook.com/share/p/1FF6Y9kFxn/",
     },
   },
   {
@@ -275,9 +278,9 @@ const experienceProjects = [
       live_site_youth: null,
       live_site_parent: null,
       mockup_demo: "",
-      github: "https://github.com/8-MrAlex-8/roomsync",
-      figma: "https://figma.com/file/roomsync",
-      documentation: null,
+      github: "https://github.com/gr2ws/roomsync-app",
+      documentation:
+        "https://docs.google.com/document/d/1w4W4jYZ0ahv5TXYHOWH7r12O69RS11fHX62uZX1ucWM/edit?usp=sharing",
       win_article: null,
     },
   },
@@ -286,7 +289,7 @@ const experienceProjects = [
     tech: ["Kotlin", "YOLOv11", "Flask"],
     description: "Garbage segregation aid with AI detection.",
     impact:
-      "Built an AI-powered Android app with YOLOv11 image classification, delivering end-to-end mobile → backend → image recognition + inference flow with >90% accuracy.",
+      "Built an AI-powered Android app with YOLOv11 image classification, delivering end-to-end mobile → backend → image recognition + inference flow with 85% accuracy.",
     stats: "Academic Project · Emerging Technologies",
     colSpan: "md:col-span-2",
     color: "bg-indigo-900/20",
@@ -673,8 +676,12 @@ const Projects = () => {
                       {project.description}
                     </p>
 
-                    <div className={`${project.accentBg} rounded-xl p-4 border ${project.accentBorder} mb-5`}>
-                      <p className={`${project.accent} text-[10px] font-bold uppercase tracking-widest mb-2 flex items-center gap-1.5`}>
+                    <div
+                      className={`${project.accentBg} rounded-xl p-4 border ${project.accentBorder} mb-5`}
+                    >
+                      <p
+                        className={`${project.accent} text-[10px] font-bold uppercase tracking-widest mb-2 flex items-center gap-1.5`}
+                      >
                         <Info size={12} /> Impact &amp; Results
                       </p>
                       <p className="text-slate-200 text-xs leading-relaxed">
@@ -696,7 +703,10 @@ const Projects = () => {
                 {/* Right — Portrait Screenshots */}
                 <div className="relative z-10 flex-shrink-0 w-[140px] sm:w-[160px] md:w-[180px] bg-black/20 border-l border-white/5">
                   <div className="h-full w-full relative group/carousel overflow-hidden">
-                    <ImageCarousel images={project.images} title={project.title} />
+                    <ImageCarousel
+                      images={project.images}
+                      title={project.title}
+                    />
                     {/* Phone notch overlay for aesthetics */}
                     <div className="absolute top-3 left-1/2 -translate-x-1/2 w-12 h-3 bg-black/60 rounded-full z-30 pointer-events-none" />
                   </div>
