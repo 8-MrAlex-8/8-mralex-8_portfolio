@@ -32,6 +32,26 @@ const About = () => {
               ))}
             </div>
           </div>
+          <div className="bg-slate-50 p-6 mt-8 rounded-xl border border-slate-100">
+            <h3 className="font-bold text-sm mb-4 uppercase tracking-widest text-purple-600">
+              Industries Served
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {[
+                "Energy and Power",
+                "Hospitality",
+                "Logistics",
+                "SME Commerce",
+              ].map((skill, i) => (
+                <span
+                  key={i}
+                  className="px-3 py-1 bg-white border border-slate-200 rounded text-xs font-semibold text-slate-700"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
 
         <div>
