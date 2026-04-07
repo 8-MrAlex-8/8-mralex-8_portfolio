@@ -59,9 +59,9 @@ const featuredProjects = [
       "Docker",
       "OpenRouter | GPT-OSS-120B",
     ],
-    description: "Inventory management system for gadgets.",
+    description: "BSCS Senior Thesis on AI Research.",
     impact:
-      "Designed a temporal memory system and 6-stage pipeline (as partial fulfillment of CS Thesis Requirements) to analyze long-form narrative consistency with LLMs, achieving 92.72% accuracy (Cohen’s Kappa = 0.44). [PUBLISH PENDING!]",
+      "Designed a temporal memory system and 6-stage pipeline (as partial fulfillment of CS Thesis Requirements) to analyze long-form narrative consistency with LLMs, achieving 92.72% accuracy (Cohen’s Kappa = 0.44).",
     images: [
       "/memoweave-screenshot-0.png",
       "/memoweave-screenshot-1.png",
@@ -82,6 +82,32 @@ const featuredProjects = [
         "https://www.figma.com/design/lBeFYh2oVEBDLiAEZkUm91/Temporal_Memory_UI?t=5KdlknG8YBDZ8Hlj-1",
       documentation:
         "https://drive.google.com/file/d/18ILEu6Ce2ApcTiwsaCN41aIFfDuVGCl9/view?usp=sharing",
+      win_article: null,
+    },
+  },
+  {
+    title: "Dockside Hotel",
+    tech: ["HTML", "CSS", "Bootstrap", "Javascript", "PHP", "MySQL"],
+    description: "Full-Stack Hotel website and Booking Management System",
+    impact:
+      "Full-stack hotel management system covering auth, booking, admin CRUD, and core system architecture. All from scratch.",
+    images: [
+      "/dockside-0.png",
+      "/dockside-1.png",
+      "/dockside-2.png",
+      "/dockside-3.png",
+      "/dockside-4.png",
+    ],
+    color: "bg-teal-900/40",
+    border: "border-teal-500/50",
+    nda: false,
+    links: {
+      live_site_youth: null,
+      live_site_parent: null,
+      mockup_demo: null,
+      github: "https://github.com/Santi-Archive/MemoWeave",
+      figma: null,
+      documentation: null,
       win_article: null,
     },
   },
@@ -155,13 +181,14 @@ const experienceProjects = [
       "Figma",
     ],
     description: "Internal automation tools & ETL pipeline.",
-    impact: `[DEV] Contributed to modernizing internal systems for a major electric utility across full-stack dev and UI/UX (PHP, JS, Bootstrap, jQuery).
-  \n[DEV] Designed and built internal web tools from Figma to production, improving usability and workflows.
-  \n[AUTOMATION] Built a Python ETL pipeline processing 500+ schedules across 20+ Excel files in <5s.
-  \n[AUTOMATION] Supported a Power Automate solution that eliminated manual attachment extraction.
-  \n[IMPACT] Closed 30% of team backlog within a 280-hour internship.`,
-    stats: "Internship (Jun-Aug 2025)",
-    colSpan: "md:col-span-2",
+    impact: [
+      "Contributed to the development and modernization of internal business systems for a major electric distribution utility in the power industry, closing 30% of outstanding team backlogs across development, automation, and UI/UX workstreams over a 280-hour internship.",
+      "Designed and Developed full-stack web tools using Figma, HTML, CSS, JavaScript, PHP, Bootstrap, and jQuery.",
+      "Engineered a Python-based ETL pipeline, processing 500+ job schedules across 20+ Excel sheets in <5 seconds.",
+      "Supported the development of an automated attachment extraction tool in MS Power Automate, reducing 100% of related manual work.",
+    ],
+    stats: "Internship (Jun-Jul 2025)",
+    colSpan: "md:col-span-6",
     color: "bg-slate-800/40",
     nda: true,
     links: {
@@ -188,7 +215,7 @@ const experienceProjects = [
     impact:
       "Led frontend delivery. Coordinated rapid execution on React/Next.js MVP under hackathon constraints.",
     stats: "Safeway Philtech 2026 Innovathon",
-    colSpan: "md:col-span-2",
+    colSpan: "md:col-span-3",
     color: "bg-teal-900/20",
     nda: false,
     links: {
@@ -208,7 +235,7 @@ const experienceProjects = [
     impact:
       "Led product ideation & technical pitch. Placed Top 5 out of 30 teams.",
     stats: "AI.DEAS for Impact 2025",
-    colSpan: "md:col-span-2",
+    colSpan: "md:col-span-3",
     color: "bg-pink-900/20",
     nda: false,
     links: {
@@ -228,8 +255,8 @@ const experienceProjects = [
     description: "AI-automated irrigation solution design.",
     impact:
       "Identified agricultural pain points, designed, and pitched an AI-automated irrigation MVP. Earned 1st Runner-Up.",
-    stats: "AI for Innovation and Social Impact",
-    colSpan: "md:col-span-2",
+    stats: "AI.DEAS FOR IMPACT 2024",
+    colSpan: "md:col-span-3",
     color: "bg-green-900/20",
     nda: false,
     links: {
@@ -251,7 +278,7 @@ const experienceProjects = [
     impact:
       "Built and pitched an AI-based job portal prototype. Earned 1st Runner-Up.",
     stats: "Talleco, Inc. Provincial Inter-School Hackathon",
-    colSpan: "md:col-span-2",
+    colSpan: "md:col-span-3",
     color: "bg-blue-900/20",
     nda: false,
     links: {
@@ -262,66 +289,6 @@ const experienceProjects = [
       figma: null,
       documentation: null,
       win_article: "https://www.facebook.com/share/p/1FF6Y9kFxn/",
-    },
-  },
-  {
-    title: "RoomSync",
-    tech: ["React Native", "AI"],
-    description: "Smart boardmate matching platform.",
-    impact:
-      "Led a 7-member Agile team to deliver an AI-driven mobile platform for user-to-rental matching using a self-designed ELO-based recommendation model.",
-    stats: "Academic Project · Software Engineering 2",
-    colSpan: "md:col-span-2",
-    color: "bg-slate-800/40",
-    nda: false,
-    links: {
-      live_site_youth: null,
-      live_site_parent: null,
-      mockup_demo: "",
-      github: "https://github.com/gr2ws/roomsync-app",
-      documentation:
-        "https://docs.google.com/document/d/1w4W4jYZ0ahv5TXYHOWH7r12O69RS11fHX62uZX1ucWM/edit?usp=sharing",
-      win_article: null,
-    },
-  },
-  {
-    title: "LAPUK",
-    tech: ["Kotlin", "YOLOv11", "Flask"],
-    description: "Garbage segregation aid with AI detection.",
-    impact:
-      "Built an AI-powered Android app with YOLOv11 image classification, delivering end-to-end mobile → backend → image recognition + inference flow with 85% accuracy.",
-    stats: "Academic Project · Emerging Technologies",
-    colSpan: "md:col-span-2",
-    color: "bg-indigo-900/20",
-    nda: false,
-    links: {
-      live_site_youth: null,
-      live_site_parent: null,
-      mockup_demo: "https://lapuk-android.vercel.app",
-      github: "https://github.com/8-MrAlex-8/lapuk-android",
-      figma: "https://figma.com/file/lapuk",
-      documentation: null,
-      win_article: null,
-    },
-  },
-  {
-    title: "Dockside Hotel",
-    tech: ["HTML/CSS/JS", "PHP", "MySQL", "Bootstrap"],
-    description: "Complete hotel management system.",
-    impact:
-      "Full-stack hotel management system covering auth, booking, admin CRUD, and core system architecture. All from scratch.",
-    stats: "Academic Project · Web Technologies",
-    colSpan: "md:col-span-2",
-    color: "bg-slate-900/60",
-    nda: false,
-    links: {
-      live_site_youth: null,
-      live_site_parent: null,
-      mockup_demo: "https://dockside-hotel.vercel.app",
-      github: "https://github.com/8-MrAlex-8/dockside-hotel",
-      figma: "https://figma.com/file/dockside-hotel",
-      documentation: null,
-      win_article: null,
     },
   },
 ];
@@ -720,7 +687,7 @@ const Projects = () => {
         <div>
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
             <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight leading-none">
-              Experience &
+              Internship &
               <br />
               <span className="text-teal-500">Competitions_</span>
             </h2>
@@ -770,21 +737,40 @@ const Projects = () => {
                           {project.description}
                         </p>
 
-                        <div className="group/impact relative inline-block mt-2 cursor-help">
-                          <span className="text-xs font-bold text-teal-400 bg-teal-900/20 px-2 py-0.5 rounded border border-teal-500/20 flex items-center gap-1 hover:bg-teal-900/40 transition-colors w-max">
-                            <Info size={12} /> Impact
-                          </span>
-
-                          <div className="absolute left-0 bottom-full mb-3 w-72 md:w-96 bg-slate-950/95 backdrop-blur-xl border border-teal-500/30 p-4 rounded-xl shadow-2xl opacity-0 group-hover/impact:opacity-100 group-hover/impact:pointer-events-auto pointer-events-none transition-all duration-200 z-[100] translate-y-2 group-hover/impact:translate-y-0 text-left">
-                            <p className="text-teal-400 text-[10px] font-bold uppercase tracking-widest mb-1">
+                        {index === 0 ? (
+                          <div className="my-4">
+                            <p className="text-teal-400 text-[10px] mb-2 font-bold uppercase tracking-widest mb-1">
                               Impact & Results
                             </p>
-                            <p className="text-white text-sm leading-relaxed whitespace-pre-line">
-                              {project.impact}
-                            </p>
+
+                            {project.impact.map((impactPoint) => {
+                              return (
+                                <p className="text-white text-sm leading-relaxed mb-2">
+                                  <span className="text-teal-600 mr-2">•</span>{" "}
+                                  {impactPoint}
+                                </p>
+                              );
+                            })}
+
                             <div className="absolute left-4 -bottom-1.5 w-3 h-3 bg-slate-950 border-b border-r border-teal-500/30 transform rotate-45" />
                           </div>
-                        </div>
+                        ) : (
+                          <div className="group/impact relative inline-block mt-2 cursor-help">
+                            <span className="text-xs font-bold text-teal-400 bg-teal-900/20 px-2 py-0.5 rounded border border-teal-500/20 flex items-center gap-1 hover:bg-teal-900/40 transition-colors w-max">
+                              <Info size={12} /> Impact
+                            </span>
+
+                            <div className="absolute left-0 bottom-full mb-3 w-72 md:w-96 bg-slate-950/95 backdrop-blur-xl border border-teal-500/30 p-4 rounded-xl shadow-2xl opacity-0 group-hover/impact:opacity-100 group-hover/impact:pointer-events-auto pointer-events-none transition-all duration-200 z-[100] translate-y-2 group-hover/impact:translate-y-0 text-left">
+                              <p className="text-teal-400 text-[10px] font-bold uppercase tracking-widest mb-1">
+                                Impact & Results
+                              </p>
+                              <p className="text-white text-sm leading-relaxed whitespace-pre-line">
+                                {project.impact}
+                              </p>
+                              <div className="absolute left-4 -bottom-1.5 w-3 h-3 bg-slate-950 border-b border-r border-teal-500/30 transform rotate-45" />
+                            </div>
+                          </div>
+                        )}
                       </div>
                     </div>
 
@@ -813,7 +799,7 @@ const Projects = () => {
         </div>
 
         {/* --- 3. Data Case Studies --- */}
-        <div>
+        {/* <div>
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
             <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight leading-none">
               Data Case
@@ -840,7 +826,7 @@ const Projects = () => {
                 transition={{ delay: index * 0.1, duration: 0.4 }}
                 className="group rounded-2xl border border-white/10 bg-slate-900/50 hover:bg-slate-900 hover:border-orange-500/30 transition-all duration-300 overflow-hidden flex flex-col"
               >
-                {/* Visual Header */}
+                {/* Visual Header * /}
                 <div className="h-48 w-full relative border-b border-white/10 overflow-hidden">
                   <div
                     className={`absolute inset-0 ${study.color} mix-blend-overlay z-10 group-hover:opacity-0 transition-opacity duration-500`}
@@ -893,7 +879,7 @@ const Projects = () => {
               </motion.div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
