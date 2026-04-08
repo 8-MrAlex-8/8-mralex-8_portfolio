@@ -17,7 +17,7 @@ const featuredProjects = [
     tech: ["Next.js", "React.js", "Tailwind CSS", "TypeScript", "Supabase"],
     description: "Production business portal replacing manual workflows.",
     impact:
-      "Sustained 100 concurrent users at 161ms p95 latency. 0% error rate under load. 100% digitized workflow. \n[ 1.1s FCP · 2.5s LCP · 0 CLS ]",
+      "Solely engineered an online business portal for a port reception facility, streamlining document processing and reducing manual work by 75%. Sustained 100 concurrent users at 161ms p95 latency and 0% error rate. \n[ 1.1s FCP · 2.5s LCP · 0 CLS ]",
     images: [
       "/gregg-mockup-0.png",
       "/gregg-mockup-1.jpg",
@@ -90,13 +90,14 @@ const featuredProjects = [
     tech: ["HTML", "CSS", "Bootstrap", "Javascript", "PHP", "MySQL"],
     description: "Full-Stack Hotel website and Booking Management System",
     impact:
-      "Full-stack hotel management system covering auth, booking, admin CRUD, and core system architecture. All from scratch.",
+      "Built a full-stack hotel management system covering authentication, booking, admin CRUD, and core system architecture using foundational technologies. Integrated a scalable MySQL database architecture to handle complex relationships between guests, room categories, and dynamic availability.",
     images: [
       "/dockside-0.png",
       "/dockside-1.png",
       "/dockside-2.png",
       "/dockside-3.png",
       "/dockside-4.png",
+      "/dockside-5.png",
     ],
     color: "bg-teal-900/40",
     border: "border-teal-500/50",
@@ -709,11 +710,16 @@ const Projects = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05, duration: 0.4 }}
-                className={`group relative rounded-2xl border border-white/5 bg-slate-900 hover:border-teal-500/30 transition-all duration-300 flex flex-col ${project.colSpan}`}
+                className={`group relative rounded-2xl border border-white/5 bg-slate-900 hover:border-teal-500/30 transition-all duration-300 flex flex-col ${project.colSpan} overflow-hidden`}
               >
                 <div
                   className={`absolute inset-0 ${project.color} opacity-30 group-hover:opacity-50 transition-opacity rounded-2xl`}
                 />
+                
+                {/* Logo Watermark */}
+                <div className="absolute -bottom-6 -right-6 w-48 h-48 opacity-[0.03] group-hover:opacity-[0.08] transition-all duration-500 pointer-events-none transform group-hover:scale-110 group-hover:-rotate-12 z-0">
+                  <img src={project.logo || "/dummy-logo.svg"} alt="Project Logo" className="w-full h-full object-contain filter grayscale invert opacity-50" />
+                </div>
 
                 <div className="relative z-10 flex-1 p-6 flex flex-col justify-between min-h-[300px]">
                   <div>
@@ -737,40 +743,29 @@ const Projects = () => {
                           {project.description}
                         </p>
 
-                        {index === 0 ? (
-                          <div className="my-4">
-                            <p className="text-teal-400 text-[10px] mb-2 font-bold uppercase tracking-widest mb-1">
-                              Impact & Results
+                        <div className="my-4 relative z-10 w-full">
+                          <p className="text-teal-400 text-[10px] mb-2 font-bold uppercase tracking-widest">
+                            Impact & Results
+                          </p>
+
+                          {Array.isArray(project.impact) ? (
+                            project.impact.map((impactPoint, i) => (
+                              <p key={i} className="text-white text-sm leading-relaxed mb-2">
+                                <span className="text-teal-600 mr-2">•</span>{" "}
+                                {impactPoint}
+                              </p>
+                            ))
+                          ) : (
+                            <p className="text-white text-sm leading-relaxed mb-2 whitespace-pre-line">
+                              <span className="text-teal-600 mr-2">•</span>{" "}
+                              {project.impact}
                             </p>
-
-                            {project.impact.map((impactPoint) => {
-                              return (
-                                <p className="text-white text-sm leading-relaxed mb-2">
-                                  <span className="text-teal-600 mr-2">•</span>{" "}
-                                  {impactPoint}
-                                </p>
-                              );
-                            })}
-
-                            <div className="absolute left-4 -bottom-1.5 w-3 h-3 bg-slate-950 border-b border-r border-teal-500/30 transform rotate-45" />
-                          </div>
-                        ) : (
-                          <div className="group/impact relative inline-block mt-2 cursor-help">
-                            <span className="text-xs font-bold text-teal-400 bg-teal-900/20 px-2 py-0.5 rounded border border-teal-500/20 flex items-center gap-1 hover:bg-teal-900/40 transition-colors w-max">
-                              <Info size={12} /> Impact
-                            </span>
-
-                            <div className="absolute left-0 bottom-full mb-3 w-72 md:w-96 bg-slate-950/95 backdrop-blur-xl border border-teal-500/30 p-4 rounded-xl shadow-2xl opacity-0 group-hover/impact:opacity-100 group-hover/impact:pointer-events-auto pointer-events-none transition-all duration-200 z-[100] translate-y-2 group-hover/impact:translate-y-0 text-left">
-                              <p className="text-teal-400 text-[10px] font-bold uppercase tracking-widest mb-1">
-                                Impact & Results
-                              </p>
-                              <p className="text-white text-sm leading-relaxed whitespace-pre-line">
-                                {project.impact}
-                              </p>
-                              <div className="absolute left-4 -bottom-1.5 w-3 h-3 bg-slate-950 border-b border-r border-teal-500/30 transform rotate-45" />
-                            </div>
-                          </div>
-                        )}
+                          )}
+                          
+                          {index === 0 && (
+                            <div className="absolute left-4 -bottom-1.5 w-3 h-3 bg-slate-950 border-b border-r border-teal-500/30 transform rotate-45 hidden md:block" />
+                          )}
+                        </div>
                       </div>
                     </div>
 

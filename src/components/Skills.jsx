@@ -6,7 +6,7 @@ const allSkills = [
   { name: "HTML", icon: "html.svg", size: "lg" },
   { name: "CSS", icon: "css.svg", size: "lg" },
   { name: "JavaScript", icon: "js.svg", size: "lg" },
-  { name: "TypeScript", icon: "js.svg", size: "md" },
+  { name: "TypeScript", icon: "typescript.png", size: "md" },
   { name: "Python", icon: "python.svg", size: "lg" },
   { name: "C#", icon: "csharp.png", size: "md" },
   { name: "PHP", icon: "php.svg", size: "lg" },
@@ -17,7 +17,7 @@ const allSkills = [
   { name: "React", icon: "react.svg", size: "lg" },
   { name: "Next.js", icon: "next.png", size: "lg" },
   { name: "React Native", icon: "react-native.svg", size: "md" },
-  { name: "Node.js", icon: "js.svg", size: "md" },
+  { name: "Node.js", icon: "node.png", size: "md" },
   { name: "Tailwind", icon: "tailwind.png", size: "lg" },
   { name: "Bootstrap", icon: "bootstrap.png", size: "md" },
   { name: "Flask", icon: "flask.svg", size: "sm" },
@@ -33,7 +33,7 @@ const allSkills = [
   { name: "Figma", icon: "figma.svg", size: "lg" },
   { name: "Tableau", icon: "tableau.svg", size: "md" },
   { name: "VS Code", icon: "vscode.svg", size: "md" },
-  { name: "Notion", icon: "notion.svg", size: "md" },
+  { name: "Notion", icon: "notion.png", size: "md" },
   { name: "Trello", icon: "trello.svg", size: "md" },
 ];
 
