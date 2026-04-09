@@ -728,9 +728,9 @@ const Projects = () => {
                 {/* Logo Watermark */}
                 <div className="absolute bottom-4 right-4 w-48 h-16 opacity-10 group-hover:opacity-70 grayscale group-hover:grayscale-0 transition-all duration-500 pointer-events-none transform group-hover:scale-105 group-hover:-rotate-3 z-0">
                   <img
-                    src={project.logo || "/dummy-logo.svg"}
+                    src={project.logo}
                     alt="Project Logo"
-                    className="w-full h-full object-contain object-right-bottom filter mix-blend-plus-lighter"
+                    className={project.logo ? "w-full h-full object-contain object-right-bottom filter mix-blend-plus-lighter" : "hidden"}
                   />
                 </div>
 
