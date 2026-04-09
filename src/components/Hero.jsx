@@ -51,17 +51,14 @@ const Hero = () => {
                 className="group px-6 py-3 bg-white text-black font-bold text-sm hover:bg-purple-300 transition-all duration-300 flex items-center gap-2 rounded"
               >
                 VIEW WORK
-                <span className="group-hover:translate-x-1 transition-transform">
-                  →
-                </span>
               </a>
 
               <a
                 href="/Malto_CV.pdf"
                 download
-                className="px-6 py-3 border border-white/20 text-white font-bold text-sm hover:bg-white/10 hover:border-white transition-all duration-300 rounded"
+                className="group px-6 py-3 bg-white text-black font-bold text-sm hover:bg-purple-300 transition-all duration-300 flex items-center gap-2 rounded"
               >
-                RESUME
+                DOWNLOAD CV
               </a>
             </div>
 

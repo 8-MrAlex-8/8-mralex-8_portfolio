@@ -7,9 +7,9 @@ const experiences = [
     period: "NOV 2025 – PRESENT",
     desc: "Solely designed & deployed production portal. Sustained 100 concurrent users.",
     details: [
-      "Solely designed, implemented, and deployed a production-ready business portal using Next.js, React, TypeScript, Tailwind CSS, and Supabase, replacing a manual, image-based workflow.",
-      "Constructed a reliable backend, sustaining 100 concurrent users at p95 latency of 161ms, ~50 requests/sec throughput, and 0% error rate under load.",
-      "Delivered strong client-side performance, achieving Lighthouse score of 88, 1.1s First Contentful Paint, 2.5s Largest Contentful Paint, and 0 Cumulative Layout Shift, while streamlining data submission and validation for organization staff.",
+      "Engineered an online business portal for a facilities management company, streamlining document processing and reducing manual work by 75%.",
+      "Built a performant frontend using React/TS, Next.js, and Tailwind CSS (Lighthouse: 88, 1.1s FCP, 2.5s LCP, 0 CLS).",
+      "Engineered a robust backend supporting 100+ concurrent users (p95: 161ms, ~50 req/s, 0% error rate).",
     ],
   },
   {
@@ -18,7 +18,7 @@ const experiences = [
     period: "FEB 2026 – APRIL 2026",
     desc: "Self-engineered role-based inventory management system with authentication and lightweight UI.",
     details: [
-      "Engineered a role-based web inventory system for a local SME in Dumaguete, digitizing manual spreadsheet workflows and improving efficiency by 80%; Implemented robust, test-driven form validation using React Hook Form and Zod for data integrity.",
+      "Engineered a role-based web inventory system to digitize manual spreadsheet workflows and improve efficiency by 80%; Implemented robust, test-driven form validation using React Hook Form and Zod for data integrity.",
       "Produced lightweight UI with Tailwind CSS, yielding Lighthouse scores of 99, 0.4s FCP, 0.8s LCP, and 0 CLS.",
     ],
   },
@@ -29,9 +29,9 @@ const experiences = [
     desc: "Closed 30% of team backlog. Built internal automation tools.",
     details: [
       "Closed 30% of outstanding team backlogs across development, automation, and UI/UX workstreams over a 280-hour internship.",
-      "Developed internal full-stack web tools using HTML, CSS, JavaScript, PHP, Bootstrap, and jQuery, guided by self-designed Figma prototypes.",
-      "Designed and implemented a Python-based ETL pipeline that processed 500+ job schedules across 22 Excel sheets in <5 seconds, generating CRON expressions and eliminating hours of manual work.",
-      "Supported the development of an automated attachment extraction tool using MS Power Automate.",
+      "Designed and developed full-stack web tools using Figma, HTML, CSS, JavaScript, PHP, Bootstrap, and jQuery.",
+      "Engineered a Python-based ETL pipeline, processing 500+ job schedules across 20+ Excel sheets in <5 seconds.",
+      "Supported the development of an automated attachment extraction tool in MS Power Automate, reducing 100% of related manual work.",
     ],
   },
 ];
@@ -39,9 +39,8 @@ const experiences = [
 const education = [
   {
     school: "Silliman University",
-    degree: "BS Computer Science",
+    degree: "BS Computer Science with units in BS Mathematics",
     period: "AUG 2022 – MAR 2026",
-    note: "with units in BS Mathematics",
     awards: [
       "Junior-Level Class Honors (2025)",
       "2nd Place: The Brain Blitz – Intercollegiate Mathematics Quiz Bowl",
@@ -63,7 +62,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-20 px-4 sm:px-12 bg-slate-100 text-slate-950"
+      className="py-14 md:py-20 px-4 sm:px-12 bg-slate-100 text-slate-950"
     >
       <div className="max-w-[1800px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
         {/* Experience Column */}
@@ -74,7 +73,7 @@ const Experience = () => {
             </h2>
           </div>
 
-          <div className="space-y-12">
+          <div className="space-y-12 px-6">
             {experiences.map((exp, index) => (
               <motion.div
                 key={index}
@@ -85,10 +84,10 @@ const Experience = () => {
                 className="group"
               >
                 <div className="flex flex-col md:flex-row md:items-baseline justify-between mb-2">
-                  <h3 className="text-2xl font-bold uppercase group-hover:text-purple-600 transition-colors">
+                  <h3 className="text-2xl font-bold uppercase md:group-hover:text-purple-600 transition-colors">
                     {exp.company}
                   </h3>
-                  <span className="font-mono font-bold text-sm text-slate-500">
+                  <span className="mt-2 md:mt-0 font-mono font-bold text-sm text-slate-500">
                     {exp.period}
                   </span>
                 </div>
@@ -123,7 +122,7 @@ const Experience = () => {
                 transition={{ delay: index * 0.1 }}
                 className="group p-8 border-2 border-slate-950 bg-white hover:bg-slate-950 hover:text-white transition-all duration-300 rounded-2xl"
               >
-                <div className="flex justify-between items-start mb-2">
+                <div className="flex flex-col gap-2 md:flex-row md:justify-between md:items-start mb-2">
                   <h3 className="text-2xl font-bold uppercase">{edu.school}</h3>
                   <span className="font-mono text-xs font-bold bg-purple-200 text-purple-900 px-2 py-1 rounded group-hover:bg-purple-600 group-hover:text-white transition-colors">
                     {edu.period}

@@ -204,6 +204,7 @@ const experienceProjects = [
   },
   {
     title: "Nudge",
+    logo: "/hackathon-logos/nudge-logo.png",
     tech: [
       "Next.js",
       "React.js",
@@ -213,8 +214,10 @@ const experienceProjects = [
       "AI",
     ],
     description: "Pet-based youth mental health web app.",
-    impact:
-      "Led frontend delivery. Coordinated rapid execution on React/Next.js MVP under hackathon constraints.",
+    impact: [
+      "Led frontend development of Nudge, a pet-based youth mental health web app, using React, Typescript, Next.js, and Tailwind CSS.",
+      "Coordinated the frontend unit through GitHub for fast-paced collaboration.",
+    ],
     stats: "Safeway Philtech 2026 Innovathon",
     colSpan: "md:col-span-3",
     color: "bg-teal-900/20",
@@ -233,8 +236,10 @@ const experienceProjects = [
     title: "Axolert",
     tech: ["AI"],
     description: "AI public-health monitoring concept.",
-    impact:
-      "Led product ideation & technical pitch. Placed Top 5 out of 30 teams.",
+    impact: [
+      "Led product ideation and system-design efforts for Axolert, an AI public-health and hospital asset monitoring concept.",
+      "Delivered the technical pitch, earning Top 5 out of 30 teams in the regional competition.",
+    ],
     stats: "AI.DEAS for Impact 2025",
     colSpan: "md:col-span-3",
     color: "bg-pink-900/20",
@@ -253,6 +258,7 @@ const experienceProjects = [
   {
     title: "AgriFlow",
     tech: ["Figma", "AI"],
+    logo: "/hackathon-logos/agriflow-logo.png",
     description: "AI-automated irrigation solution design.",
     impact:
       "Identified agricultural pain points, designed, and pitched an AI-automated irrigation MVP. Earned 1st Runner-Up.",
@@ -478,8 +484,11 @@ const ActionLinks = ({ project }) => {
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 px-4 sm:px-8 z-10 relative">
-      <div className="max-w-6xl mx-auto space-y-32">
+    <section
+      id="projects"
+      className="py-16 md:py-20 px-4 sm:px-8 z-10 relative"
+    >
+      <div className="max-w-6xl mx-auto space-y-20 md:space-y-32 px-4 md:px-0">
         {/* --- 1. Featured Freelance Projects --- */}
         <div>
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
@@ -506,14 +515,14 @@ const Projects = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className={`flex flex-col lg:flex-row gap-8 lg:gap-12 items-stretch bg-slate-900 border ${project.border} rounded-3xl p-6 lg:p-8 relative overflow-hidden group hover:shadow-2xl transition-all duration-500 lg:max-h-[80dvh] lg:min-h-[500px]`}
+                className={`flex flex-col lg:flex-row gap-0 lg:gap-12 items-stretch bg-slate-900 border ${project.border} rounded-[2rem] lg:rounded-3xl p-0 lg:p-8 relative overflow-hidden group hover:shadow-2xl transition-all duration-500 lg:max-h-[80dvh] lg:min-h-[500px]`}
               >
                 <div
                   className={`absolute inset-0 ${project.color} opacity-20 group-hover:opacity-30 transition-opacity`}
                 />
 
                 {/* Content Section (Left on Desktop, Bottom on Mobile) */}
-                <div className="w-full lg:w-2/5 xl:w-[35%] relative z-10 flex flex-col h-full justify-center py-2 order-2 lg:order-1 overflow-y-auto pr-1 sm:pr-2 custom-scrollbar">
+                <div className="w-full lg:w-2/5 xl:w-[35%] relative z-10 flex flex-col h-full justify-center p-6 lg:p-0 order-2 lg:order-1 overflow-y-auto lg:pr-1 xl:pr-2 custom-scrollbar">
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech, i) => (
                       <span
@@ -557,8 +566,8 @@ const Projects = () => {
                 </div>
 
                 {/* Landscape Format Image Section (Right on Desktop, Top on Mobile) */}
-                <div className="w-full lg:w-3/5 xl:w-[65%] relative z-10 flex flex-col justify-center order-1 lg:order-2 h-64 lg:h-auto min-h-0">
-                  <div className="w-full h-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl group-hover:scale-[1.02] transition-transform duration-500 bg-white/5 backdrop-blur-sm relative">
+                <div className="w-full lg:w-3/5 xl:w-[65%] relative z-10 flex flex-col justify-center order-1 lg:order-2 h-64 sm:h-[22rem] lg:h-auto min-h-0">
+                  <div className="w-full h-full rounded-none lg:rounded-2xl overflow-hidden border-b lg:border border-white/10 shadow-xl lg:shadow-2xl lg:group-hover:scale-[1.02] transition-transform duration-500 bg-white/5 backdrop-blur-sm relative">
                     {project.images ? (
                       <ImageCarousel
                         images={project.images}
@@ -617,14 +626,14 @@ const Projects = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
-                className={`group relative flex flex-row gap-0 bg-slate-900 border ${project.border} rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500`}
+                className={`group relative flex flex-col md:flex-row gap-0 bg-slate-900 border ${project.border} rounded-[2rem] md:rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500`}
               >
                 <div
                   className={`absolute inset-0 ${project.color} opacity-20 group-hover:opacity-30 transition-opacity`}
                 />
 
-                {/* Left — Project Info */}
-                <div className="relative z-10 flex flex-col justify-between p-6 flex-1 min-w-0">
+                {/* Left/Bottom — Project Info */}
+                <div className="relative z-10 flex flex-col justify-between p-6 sm:p-8 md:p-6 lg:p-8 flex-1 min-w-0 order-2 md:order-1">
                   <div>
                     <div className="flex flex-wrap gap-1.5 mb-4">
                       {project.tech.map((tech, i) => (
@@ -668,9 +677,9 @@ const Projects = () => {
                   </div>
                 </div>
 
-                {/* Right — Portrait Screenshots */}
-                <div className="relative z-10 flex-shrink-0 w-[140px] sm:w-[160px] md:w-[180px] bg-black/20 border-l border-white/5">
-                  <div className="h-full w-full relative group/carousel overflow-hidden">
+                {/* Right/Top — Portrait Screenshots */}
+                <div className="relative z-10 flex-shrink-0 w-full h-[320px] sm:h-[400px] md:h-auto md:w-[180px] lg:w-[220px] bg-black/20 border-b md:border-b-0 md:border-l border-white/5 order-1 md:order-2 flex justify-center py-4 md:py-0">
+                  <div className="h-full w-[160px] sm:w-[200px] md:w-full relative group/carousel overflow-hidden shadow-2xl md:shadow-none rounded-2xl md:rounded-none">
                     <ImageCarousel
                       images={project.images}
                       title={project.title}
@@ -715,10 +724,14 @@ const Projects = () => {
                 <div
                   className={`absolute inset-0 ${project.color} opacity-30 group-hover:opacity-50 transition-opacity rounded-2xl`}
                 />
-                
+
                 {/* Logo Watermark */}
-                <div className="absolute -bottom-6 -right-6 w-48 h-48 opacity-[0.03] group-hover:opacity-[0.08] transition-all duration-500 pointer-events-none transform group-hover:scale-110 group-hover:-rotate-12 z-0">
-                  <img src={project.logo || "/dummy-logo.svg"} alt="Project Logo" className="w-full h-full object-contain filter grayscale invert opacity-50" />
+                <div className="absolute bottom-4 right-4 w-48 h-16 opacity-10 group-hover:opacity-70 grayscale group-hover:grayscale-0 transition-all duration-500 pointer-events-none transform group-hover:scale-105 group-hover:-rotate-3 z-0">
+                  <img
+                    src={project.logo || "/dummy-logo.svg"}
+                    alt="Project Logo"
+                    className="w-full h-full object-contain object-right-bottom filter mix-blend-plus-lighter"
+                  />
                 </div>
 
                 <div className="relative z-10 flex-1 p-6 flex flex-col justify-between min-h-[300px]">
@@ -750,7 +763,10 @@ const Projects = () => {
 
                           {Array.isArray(project.impact) ? (
                             project.impact.map((impactPoint, i) => (
-                              <p key={i} className="text-white text-sm leading-relaxed mb-2">
+                              <p
+                                key={i}
+                                className="text-white text-sm leading-relaxed mb-2"
+                              >
                                 <span className="text-teal-600 mr-2">•</span>{" "}
                                 {impactPoint}
                               </p>
@@ -761,7 +777,7 @@ const Projects = () => {
                               {project.impact}
                             </p>
                           )}
-                          
+
                           {index === 0 && (
                             <div className="absolute left-4 -bottom-1.5 w-3 h-3 bg-slate-950 border-b border-r border-teal-500/30 transform rotate-45 hidden md:block" />
                           )}
