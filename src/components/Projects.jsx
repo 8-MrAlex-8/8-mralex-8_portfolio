@@ -17,7 +17,7 @@ const featuredProjects = [
     tech: ["Next.js", "React.js", "Tailwind CSS", "TypeScript", "Supabase"],
     description: "Production business portal replacing manual workflows.",
     impact:
-      "Solely engineered an online business portal for a port reception facility, streamlining document processing and reducing manual work by 75%. Sustained 100 concurrent users at 161ms p95 latency and 0% error rate. \n[ 1.1s FCP · 2.5s LCP · 0 CLS ]",
+      "Engineered an online business portal for a port reception facility, streamlining document processing by 75%. Sustained 100+ users at 161ms p95 latency and 0% error rate. \n[ 1.1s FCP · 2.5s LCP · 0 CLS ]",
     images: [
       "/gregg-mockup-0.png",
       "/gregg-mockup-1.jpg",
@@ -534,7 +534,7 @@ const Projects = () => {
                     ))}
                   </div>
 
-                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
+                  <h3 className="text-3xl md:text-3xl md:py-2 font-bold text-white mb-4 leading-tight">
                     {project.title}
                   </h3>
 
@@ -730,7 +730,11 @@ const Projects = () => {
                   <img
                     src={project.logo}
                     alt="Project Logo"
-                    className={project.logo ? "w-full h-full object-contain object-right-bottom filter mix-blend-plus-lighter" : "hidden"}
+                    className={
+                      project.logo
+                        ? "w-full h-full object-contain object-right-bottom filter mix-blend-plus-lighter"
+                        : "hidden"
+                    }
                   />
                 </div>
 

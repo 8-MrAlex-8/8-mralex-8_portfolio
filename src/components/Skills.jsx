@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { useRef } from "react";
 
 const allSkills = [
   // Languages
@@ -38,8 +37,6 @@ const allSkills = [
 ];
 
 const Skills = () => {
-  const containerRef = useRef(null);
-
   return (
     <section
       id="skills"
@@ -64,19 +61,14 @@ const Skills = () => {
         </div>
 
         {/* Chaos Cloud Layout - Refined Sizing */}
-        <div
-          className="flex flex-wrap items-center justify-center gap-4 max-w-6xl mx-auto min-h-[500px]"
-          ref={containerRef}
-        >
+        <div className="flex flex-wrap items-center justify-center gap-3 md:gap-6 max-w-6xl mx-auto min-h-[400px] md:min-h-[500px]">
           {allSkills.map((skill, i) => (
             <motion.div
               key={i}
-              drag
-              dragConstraints={containerRef}
               whileHover={{ scale: 1.1, zIndex: 10 }}
               whileTap={{ scale: 0.95 }}
               className={`
-                 relative flex items-center justify-center bg-white rounded-full border border-purple-100 cursor-grab active:cursor-grabbing shadow-sm hover:shadow-xl hover:border-purple-400 hover:scale-110 transition-all duration-300
+                 relative flex items-center justify-center bg-white rounded-full border border-purple-100 shadow-sm hover:shadow-xl hover:border-purple-400 hover:scale-110 transition-all duration-300
                  ${
                    skill.size === "lg"
                      ? "w-24 h-24 md:w-32 md:h-32"
@@ -90,7 +82,7 @@ const Skills = () => {
               viewport={{ once: true }}
               transition={{ delay: i * 0.02 }}
             >
-              <div className="flex flex-col items-center gap-1 p-2">
+              <div className="flex flex-col justify-center items-center gap-1 p-2">
                 <img
                   src={`/skills-stamp/${skill.icon}`}
                   alt={skill.name}
