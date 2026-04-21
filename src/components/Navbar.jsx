@@ -14,9 +14,9 @@ const Navbar = () => {
 
   const links = [
     { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
     { name: "Work", href: "#projects" }, // "Projects" -> "Work" for brevity
     { name: "Skills", href: "#skills" },
-    { name: "Exp", href: "#experience" },
     { name: "Contact", href: "#contact" },
   ];
 
